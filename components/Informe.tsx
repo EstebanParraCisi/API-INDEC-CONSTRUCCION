@@ -16,7 +16,7 @@ import { ultimoDato } from "./ui";
 type Props = { series: Record<string, Serie>; status: Status | null; nota: string | null; mesDefecto: string; frescura: string };
 
 const ANCHO = 340;
-const ALTO = 135;
+const ALTO = 104;
 
 function MiniGrafico({ titulo, sub, children }: { titulo: string; sub: string; children: React.ReactNode }) {
   return (

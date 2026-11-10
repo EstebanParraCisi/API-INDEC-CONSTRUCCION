@@ -98,6 +98,12 @@ export const REGLAS: Regla[] = [
       `Las hipotecas en la provincia crecen ${formatoPct(h.hipotecasPba.ia!)} interanual: el crédito hipotecario empuja compraventas y refacciones.`,
   },
   {
+    id: "hipotecas-caen",
+    aplica: (h) => h.hipotecasPba.ia !== null && h.hipotecasPba.ia < -0.2,
+    texto: (h) =>
+      `Las hipotecas en la provincia caen ${pct(h.hipotecasPba.ia!)} interanual en ${mes(h.hipotecasPba.periodo)}: el crédito hipotecario dejó de empujar compraventas y refacciones como en 2025.`,
+  },
+  {
     id: "insumos-corralon-extremos",
     aplica: (h) => !!h.insumoMejor && !!h.insumoPeor && h.insumoMejor.nombre !== h.insumoPeor.nombre,
     texto: (h) =>

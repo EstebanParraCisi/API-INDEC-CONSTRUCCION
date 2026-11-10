@@ -43,9 +43,19 @@ INDEC a veces corrige meses anteriores. Si ves que un mes viejo cambió en la pl
 
 ## `despachos_cemento.csv` — Despachos de cemento (AFCP)
 
-**De dónde:** Asociación de Fabricantes de Cemento Portland, <https://www.afcp.org.ar/> → sección de estadísticas (despachos mensuales). Sale a los pocos días de terminado el mes.
+**De dónde:** la AFCP publica una página por mes con este formato de dirección (cambiá `AAAAMM` por el mes):
+`https://afcp.info/ESTADISTICAS/DESPACHO-MENSUAL/PAAAAMM/PAAAAMM.html`
+Ejemplo, octubre 2026: <https://afcp.info/ESTADISTICAS/DESPACHO-MENSUAL/P202610/P202610.html>. Sale a los pocos días de terminado el mes.
 
-**Columnas:** `periodo,toneladas,fuente_url`. Usá el **despacho total al mercado interno** del mes, en toneladas.
+**Qué copiar:** en el primer cuadro ("DESPACHO mensual y acumulado"), la columna **Despacho Nacional → Mensual** de la fila del mes nuevo (en octubre 2026: 877.436 → se escribe `877436`).
+
+**Columnas:** `periodo,toneladas,fuente_url`.
+
+```
+2026-10,877436,https://afcp.info/ESTADISTICAS/DESPACHO-MENSUAL/P202610/P202610.html
+```
+
+Esa misma página trae el mes anterior ya corregido. Si cambió, actualizá también esa fila: por ejemplo, la página de octubre corrige septiembre.
 
 ## `indice_construya.csv` — Índice Construya
 
@@ -57,11 +67,17 @@ INDEC a veces corrige meses anteriores. Si ves que un mes viejo cambió en la pl
 
 ## `escrituras_pba.csv` — Escrituras en Provincia de Buenos Aires
 
-**De dónde:** Colegio de Escribanos de la Provincia de Buenos Aires, <https://www.colescba.org.ar/> → estadísticas / informes de prensa mensuales.
+**De dónde:** el Colegio de Escribanos de la Provincia de Buenos Aires (<https://www.colescba.org.ar/>) publica el PDF "Estadística de compraventas, hipotecas, fideicomiso, desagregado por mes" (actos sobre inmuebles de la Provincia). Se actualiza a mitad de mes con el mes anterior.
+
+**Qué copiar** (última página del PDF, fila del mes nuevo):
+- `compraventas`: columna **COMPRAVENTA → Cant. Actos** (en septiembre 2026: 12.971 → `12971`).
+- `hipotecas`: la columna **HIPOTECA → Cant. Actos** que viene a continuación (en septiembre 2026: 1.823 → `1823`). Desde 2012 hay una sola columna de hipotecas, que es el total.
 
 **Columnas:** `periodo,compraventas,hipotecas,fuente_url`.
-- `compraventas`: cantidad de escrituras de compraventa del mes en toda la provincia.
-- `hipotecas`: cantidad de escrituras con hipoteca del mes.
+
+```
+2026-09,12971,1823,https://www.colescba.org.ar/
+```
 
 Alimenta la tarjeta "Hipotecas en Provincia de Buenos Aires" y la regla de la lectura del mes "el crédito hipotecario empuja…".
 

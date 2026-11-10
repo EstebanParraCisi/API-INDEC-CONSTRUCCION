@@ -6,7 +6,104 @@
  "naturaleza": "cantidad",
  "fuente": "AFCP (Asociación de Fabricantes de Cemento Portland)",
  "fuenteUrl": "https://www.afcp.org.ar/",
- "actualizado": "2026-11-10T17:29:08.239Z",
- "ultimoPeriodo": null,
- "datos": []
+ "actualizado": "2026-11-10T17:54:09.042Z",
+ "ultimoPeriodo": "2026-10",
+ "datos": [
+  {
+   "periodo": "2024-11",
+   "valor": 869523
+  },
+  {
+   "periodo": "2024-12",
+   "valor": 764737
+  },
+  {
+   "periodo": "2025-01",
+   "valor": 831622
+  },
+  {
+   "periodo": "2025-02",
+   "valor": 735055
+  },
+  {
+   "periodo": "2025-03",
+   "valor": 740134
+  },
+  {
+   "periodo": "2025-04",
+   "valor": 837300
+  },
+  {
+   "periodo": "2025-05",
+   "valor": 817350
+  },
+  {
+   "periodo": "2025-06",
+   "valor": 809693
+  },
+  {
+   "periodo": "2025-07",
+   "valor": 887274
+  },
+  {
+   "periodo": "2025-08",
+   "valor": 885783
+  },
+  {
+   "periodo": "2025-09",
+   "valor": 917330
+  },
+  {
+   "periodo": "2025-10",
+   "valor": 967813
+  },
+  {
+   "periodo": "2025-11",
+   "valor": 829385
+  },
+  {
+   "periodo": "2025-12",
+   "valor": 755542
+  },
+  {
+   "periodo": "2026-01",
+   "valor": 788128
+  },
+  {
+   "periodo": "2026-02",
+   "valor": 696458
+  },
+  {
+   "periodo": "2026-03",
+   "valor": 826125
+  },
+  {
+   "periodo": "2026-04",
+   "valor": 730432
+  },
+  {
+   "periodo": "2026-05",
+   "valor": 806576
+  },
+  {
+   "periodo": "2026-06",
+   "valor": 810155
+  },
+  {
+   "periodo": "2026-07",
+   "valor": 815781
+  },
+  {
+   "periodo": "2026-08",
+   "valor": 814237
+  },
+  {
+   "periodo": "2026-09",
+   "valor": 959751
+  },
+  {
+   "periodo": "2026-10",
+   "valor": 877436
+  }
+ ]
 }

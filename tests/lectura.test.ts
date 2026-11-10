@@ -62,9 +62,12 @@ describe("lectura del mes", () => {
     expect(reglas(con({ permisos: { periodo: "2026-08", mm: null, ia: -0.11, acum: null } }))).toEqual(["permisos-bajan"]);
   });
 
-  it("hipotecas PBA i.a. > 20%", () => {
+  it("hipotecas PBA i.a. > 20% empuja; < −20% avisa", () => {
     expect(reglas(con({ hipotecasPba: { periodo: "2026-08", mm: null, ia: 0.25, acum: null } }))).toEqual(["hipotecas-empujan"]);
     expect(reglas(con({ hipotecasPba: { periodo: "2026-08", mm: null, ia: 0.2, acum: null } }))).toEqual([]);
+    expect(reglas(con({ hipotecasPba: { periodo: "2026-08", mm: null, ia: -0.288, acum: null } }))).toEqual(["hipotecas-caen"]);
+    expect(generarLectura(con({ hipotecasPba: { periodo: "2026-08", mm: null, ia: -0.288, acum: null } }))[0].texto).toContain("caen 28,8% interanual en agosto");
+    expect(reglas(con({ hipotecasPba: { periodo: "2026-08", mm: null, ia: -0.2, acum: null } }))).toEqual([]);
   });
 
   it("insumos de corralón: mejor y peor", () => {

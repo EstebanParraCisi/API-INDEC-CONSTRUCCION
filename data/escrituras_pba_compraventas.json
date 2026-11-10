@@ -6,7 +6,140 @@
  "naturaleza": "cantidad",
  "fuente": "Colegio de Escribanos de la Provincia de Buenos Aires",
  "fuenteUrl": "https://www.colescba.org.ar/",
- "actualizado": "2026-11-10T17:29:08.239Z",
- "ultimoPeriodo": null,
- "datos": []
+ "actualizado": "2026-11-10T17:54:09.042Z",
+ "ultimoPeriodo": "2026-09",
+ "datos": [
+  {
+   "periodo": "2024-01",
+   "valor": 3422
+  },
+  {
+   "periodo": "2024-02",
+   "valor": 4593
+  },
+  {
+   "periodo": "2024-03",
+   "valor": 7251
+  },
+  {
+   "periodo": "2024-04",
+   "valor": 7617
+  },
+  {
+   "periodo": "2024-05",
+   "valor": 9459
+  },
+  {
+   "periodo": "2024-06",
+   "valor": 8780
+  },
+  {
+   "periodo": "2024-07",
+   "valor": 9449
+  },
+  {
+   "periodo": "2024-08",
+   "valor": 10507
+  },
+  {
+   "periodo": "2024-09",
+   "valor": 9954
+  },
+  {
+   "periodo": "2024-10",
+   "valor": 11213
+  },
+  {
+   "periodo": "2024-11",
+   "valor": 12260
+  },
+  {
+   "periodo": "2024-12",
+   "valor": 19513
+  },
+  {
+   "periodo": "2025-01",
+   "valor": 5749
+  },
+  {
+   "periodo": "2025-02",
+   "valor": 7952
+  },
+  {
+   "periodo": "2025-03",
+   "valor": 10317
+  },
+  {
+   "periodo": "2025-04",
+   "valor": 12158
+  },
+  {
+   "periodo": "2025-05",
+   "valor": 11790
+  },
+  {
+   "periodo": "2025-06",
+   "valor": 11706
+  },
+  {
+   "periodo": "2025-07",
+   "valor": 13334
+  },
+  {
+   "periodo": "2025-08",
+   "valor": 12964
+  },
+  {
+   "periodo": "2025-09",
+   "valor": 14366
+  },
+  {
+   "periodo": "2025-10",
+   "valor": 15321
+  },
+  {
+   "periodo": "2025-11",
+   "valor": 12483
+  },
+  {
+   "periodo": "2025-12",
+   "valor": 19253
+  },
+  {
+   "periodo": "2026-01",
+   "valor": 6495
+  },
+  {
+   "periodo": "2026-02",
+   "valor": 7655
+  },
+  {
+   "periodo": "2026-03",
+   "valor": 11116
+  },
+  {
+   "periodo": "2026-04",
+   "valor": 9999
+  },
+  {
+   "periodo": "2026-05",
+   "valor": 9068
+  },
+  {
+   "periodo": "2026-06",
+   "valor": 10702
+  },
+  {
+   "periodo": "2026-07",
+   "valor": 12177
+  },
+  {
+   "periodo": "2026-08",
+   "valor": 12233
+  },
+  {
+   "periodo": "2026-09",
+   "valor": 12971
+  }
+ ]
 }
