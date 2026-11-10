@@ -59,11 +59,17 @@ Esa misma página trae el mes anterior ya corregido. Si cambió, actualizá tamb
 
 ## `indice_construya.csv` — Índice Construya
 
-**De dónde:** Grupo Construya, <https://www.grupoconstruya.com.ar/> → "Índice Construya" (informe mensual de prensa).
+**De dónde:** <https://www.grupoconstruya.com.ar/servicios/indice_construya>. Sale en los primeros días del mes siguiente. Abajo del comunicado está la tabla "Índice de Actividad de las Empresas Líderes de la Construcción", con todos los meses.
+
+**Qué copiar** (fila del mes nuevo):
+- `indice`: columna **Índice Con Estacionalidad** (octubre 2026: 296,8 → `296.8`).
+- `var_mm_desest`: columna **Variación % Mensual** del desestacionalizado (octubre 2026: −3,5% → `-3.5`).
 
 **Columnas:** `periodo,indice,var_mm_desest,fuente_url`.
-- `indice`: el valor del índice del mes (serie original, si el informe la publica).
-- `var_mm_desest`: la variación mensual desestacionalizada que publica el informe, en % (ej. `-2.3`). Opcional.
+
+```
+2026-10,296.8,-3.5,https://www.grupoconstruya.com.ar/servicios/indice_construya
+```
 
 ## `escrituras_pba.csv` — Escrituras en Provincia de Buenos Aires
 

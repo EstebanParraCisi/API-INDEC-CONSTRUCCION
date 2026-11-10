@@ -1,5 +1,5 @@
 {
-  "generado": "2026-11-10T17:54:09.040Z",
+  "generado": "2026-11-10T18:00:01.839Z",
   "fuentes": {
     "seriesTiempo": {
       "ok": true,
@@ -85,8 +85,8 @@
     },
     "manual": {
       "ok": true,
-      "ultimaCorrida": "2026-11-10T17:54:09.040Z",
-      "ultimaCorridaOk": "2026-11-10T17:54:09.040Z",
+      "ultimaCorrida": "2026-11-10T18:00:01.839Z",
+      "ultimaCorridaOk": "2026-11-10T18:00:01.839Z",
       "series": [
         "despachos_cemento",
         "construya_indice",

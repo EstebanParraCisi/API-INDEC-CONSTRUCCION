@@ -5,8 +5,145 @@
  "frecuencia": "mensual",
  "naturaleza": "nivel",
  "fuente": "Grupo Construya",
- "fuenteUrl": "https://www.grupoconstruya.com.ar/",
- "actualizado": "2026-11-10T17:29:08.239Z",
- "ultimoPeriodo": null,
- "datos": []
+ "fuenteUrl": "https://www.grupoconstruya.com.ar/servicios/indice_construya",
+ "actualizado": "2026-11-10T18:00:01.840Z",
+ "ultimoPeriodo": "2026-10",
+ "datos": [
+  {
+   "periodo": "2024-01",
+   "valor": -19.7
+  },
+  {
+   "periodo": "2024-02",
+   "valor": 6.8
+  },
+  {
+   "periodo": "2024-03",
+   "valor": -11.2
+  },
+  {
+   "periodo": "2024-04",
+   "valor": 6.4
+  },
+  {
+   "periodo": "2024-05",
+   "valor": 3.2
+  },
+  {
+   "periodo": "2024-06",
+   "valor": 9.7
+  },
+  {
+   "periodo": "2024-07",
+   "valor": 12.1
+  },
+  {
+   "periodo": "2024-08",
+   "valor": -4.3
+  },
+  {
+   "periodo": "2024-09",
+   "valor": -5.4
+  },
+  {
+   "periodo": "2024-10",
+   "valor": -2.8
+  },
+  {
+   "periodo": "2024-11",
+   "valor": -3.2
+  },
+  {
+   "periodo": "2024-12",
+   "valor": -1.3
+  },
+  {
+   "periodo": "2025-01",
+   "valor": -7.8
+  },
+  {
+   "periodo": "2025-02",
+   "valor": 7.4
+  },
+  {
+   "periodo": "2025-03",
+   "valor": 8.2
+  },
+  {
+   "periodo": "2025-04",
+   "valor": 10.4
+  },
+  {
+   "periodo": "2025-05",
+   "valor": -12.1
+  },
+  {
+   "periodo": "2025-06",
+   "valor": 15.5
+  },
+  {
+   "periodo": "2025-07",
+   "valor": -0.5
+  },
+  {
+   "periodo": "2025-08",
+   "valor": -8.6
+  },
+  {
+   "periodo": "2025-09",
+   "valor": 1.1
+  },
+  {
+   "periodo": "2025-10",
+   "valor": -2.2
+  },
+  {
+   "periodo": "2025-11",
+   "valor": -7.1
+  },
+  {
+   "periodo": "2025-12",
+   "valor": 3.3
+  },
+  {
+   "periodo": "2026-01",
+   "valor": -11.6
+  },
+  {
+   "periodo": "2026-02",
+   "valor": 15.9
+  },
+  {
+   "periodo": "2026-03",
+   "valor": 1.3
+  },
+  {
+   "periodo": "2026-04",
+   "valor": 5
+  },
+  {
+   "periodo": "2026-05",
+   "valor": 1.9
+  },
+  {
+   "periodo": "2026-06",
+   "valor": -2
+  },
+  {
+   "periodo": "2026-07",
+   "valor": -0.8
+  },
+  {
+   "periodo": "2026-08",
+   "valor": -3.5
+  },
+  {
+   "periodo": "2026-09",
+   "valor": -0.7
+  },
+  {
+   "periodo": "2026-10",
+   "valor": -3.5
+  }
+ ]
 }
