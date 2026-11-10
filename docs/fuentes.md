@@ -1,12 +1,12 @@
 # Fuentes de datos — relevamiento Fase 1
 
-> Relevado el 10/11/2026 consultando cada API en vivo. Todo lo marcado ✅ fue verificado con una consulta real; lo marcado ⏳ queda pendiente de confirmar.
+> Relevado el 10/11/2026 consultando cada API en vivo (incluida la API INDEC con token). Todo lo marcado ✅ fue verificado con una consulta real.
 
 ## Resumen
 
 | Fuente | Estado | Comentario |
 |---|---|---|
-| API INDEC (`api.indec.gob.ar/v1`) | ⏳ token | OpenAPI descargado: tablas y columnas confirmadas. **Sin token no se pueden leer datos** (devuelve 401), así que los valores distintos de cada columna (regiones, aperturas, capítulos) quedan pendientes. |
+| API INDEC (`api.indec.gob.ar/v1`) | ✅ | Tablas, columnas y aperturas verificadas con token. Sin token devuelve 401. |
 | API Series de Tiempo (datos.gob.ar) | ✅ | ISAC e insumos, IPC, salarios y empleo funcionan. Hace falta un `User-Agent` de navegador: con el de Python devuelve 403. |
 | API BCRA v4.0 | ✅ | Todas las variables pedidas existen y tienen datos hasta noviembre de 2026. |
 | Permisos de edificación | ❌ sin API | No está en Series de Tiempo ni en el catálogo de la API INDEC. Ver §4. |
@@ -18,7 +18,7 @@
 |---|---|---|---|
 | ISAC ago-2026 i.a. | −4,4% | −4,36% (`33.2_ISAC_NIVELRAL_0_M_18_63`: 146,86 / 153,56) | ✅ |
 | ISAC acumulado ene–ago 2026 vs 2025 | +0,8% | +0,79% (promedio de 8 meses / promedio de 8 meses) | ✅ |
-| ICC GBA sep-2026 (m/m 1,5%; acum. 23,9%; i.a. 31,3%; mat. 22,8%; MO 38,7%) | — | ⏳ necesita la API INDEC (el ICC no está en Series de Tiempo) | ⏳ |
+| ICC GBA sep-2026 (m/m 1,5%; acum. 23,9%; i.a. 31,3%; mat. 22,8%; MO 38,7%) | idem | API INDEC: 1,5 · 23,9 · 31,3 · 22,8 · 38,7 (variaciones publicadas en la tabla). El ETL además las recalcula desde el índice. | ✅ |
 
 ---
 
@@ -42,9 +42,51 @@
 | `redeterminacion_precios_contratos_obras_publicas` | dic-2015 | indicador, operativo, inciso, descripcion_inciso, codigo_apertura, clasificador, nivel, descripcion, origen, periodo, anio, mes, tipo_de_indicador, tipo_de_indicador_descripcion, region, unidad_de_medida | + `codigo_CPC_1`, `codigo_CIUU_3`, `valor`, `observaciones` |
 | `estimaciones_poblacion_departamento_2022_2035` | 2022 | departamento_cod, sexo_cod, fecha | jurisdiccion_cod, jurisdiccion_nom, departamento_nom, rmba, sexo_nom, `poblacion` |
 
-**Pendiente con token:** listar los valores distintos de `tipo_de_indicador`, `region`, `codigo_apertura`/`descripcion` (ICC: nivel general, materiales, mano de obra, gastos generales y grupos de materiales; SIPM: cemento, hierro, cerámicos, etc.) y los códigos de partido de Luján, Moreno, General Rodríguez, Pilar, Marcos Paz, Mercedes y Exaltación de la Cruz.
+Además de `valor`, las filas traen `valor_null`, que es la razón de nulo.
 
-La tabla trae variaciones ya calculadas por INDEC (`tipo_de_indicador`). El ETL va a guardar el **índice** y calcular las variaciones con `lib/calc.ts`. Las variaciones publicadas sirven para validar (pueden diferir por redondeo, como aclara la propia API).
+### Valores verificados (consultas del 10/11/2026)
+
+`tipo_de_indicador` usa los mismos códigos en ICC, IPC, salarios y SIPM: `Indice`, `v_m`, `v_ia`, `v_acum` (desde diciembre del año anterior) e `incidencia` (solo ICC). En el EMAE sectores son `Índice base 2004=100` y `Variación porcentual interanual`.
+
+**ICC** (`region = GBA`, índice base 1993 reexpresado ene-22=100, último dato **2026-09**, marcado provisorio):
+
+| Apertura | `codigo_apertura` | `nivel` |
+|---|---|---|
+| Nivel general | `0` | Nivel general |
+| Materiales | `01` | Capitulo |
+| Mano de obra | `02` (grupos `02-01` asalariada, `02-02` subcontratos) | Capitulo / Grupo |
+| Gastos generales | `03` | Capitulo |
+| Cemento portland normal, en bolsa | `01-37440-11` | Producto (solo variaciones, sin índice) |
+| Acero aletado conformado, en barra | `01-41242-11` | Producto |
+| Arena fina | `01-15310-11` | Producto |
+| Ladrillo cerámico hueco | `01-37350-11` | Producto |
+| Ítems de obra (albañilería, estructura, pintura, sanitaria…) | `IT-01` … `IT-13` | Ítems |
+
+**EMAE sectores:** Construcción = `codigo = F`. Último dato **2026-08**: índice 133,39 y −2,5% i.a. Nivel general: series original, desestacionalizada y tendencia-ciclo, también con último dato 2026-08.
+
+**IPC** (`codigo = 0`, `nivel = Nivel General`, `indicador = IPC base Dic16=100`). Regiones: `Nacional`, `GBA`, `Pampeana`, `Noreste`, `Noroeste`, `Cuyo`, `Patagonia`. Último dato **2026-09**: Nacional 1,9% m/m y 33,4% i.a.; GBA 2,0% m/m y 33,5% i.a. Para deflactar se usa el IPC **GBA**, porque el ICC también es GBA.
+
+**Índice de salarios** (`clasificador = IS 2001`). Códigos: `0` nivel general, `100` total registrado, `110` privado registrado, `120` público, `200` no registrado. Último dato **2026-08** (en Series de Tiempo llega a 2026-07). Se usa `110` (privado registrado) para salario real.
+
+**SIPM.** `indicador` toma los valores `IPIM` (precios internos al por mayor), `IPIB` e `IPP`. Se usa **IPIM**, región "Total del país", último dato **2026-09**. Aperturas elegidas:
+
+| Insumo | Nivel | `codigo_apertura` | i.a. sep-26 |
+|---|---|---|---|
+| Nivel general IPIM | Nivel general | `NG` | 29,2% |
+| Cemento y cal | Clase | `2694` | 37,6% |
+| Artículos de hormigón, cemento y yeso | Clase | `2695` | 29,5% |
+| Arcilla y cerámica para uso estructural (ladrillos) | Clase | `2693` | 12,2% |
+| Cerámica no estructural (pisos, revestimientos, sanitarios) | Clase | `2691` | 28,7% |
+| Productos de minerales ferrosos en formas básicas (hierro y acero) | Grupo | `271` | 7,5% |
+| Productos metálicos para uso estructural | Clase | `2811` | 22,8% |
+| Pinturas, barnices y enduidos | Clase | `2422` | 20,9% |
+| Vidrio y productos de vidrio | Grupo | `261` | 22,2% |
+| Productos de plástico (caños, etc.) | Grupo | `252` | 25,5% |
+| Maderas aserradas | Grupo | `201` | 17,2% |
+
+**Redeterminación de obra pública.** Tiene incisos muy útiles para un corralón: `n` Cemento, `s` Hormigón, `m` Aceros (hierro aletado), `q` Arena, `b` Albañilería, `c` Pisos y revestimientos, `h` Caños de PVC, `r` Artefactos para baño y grifería, `w` Membrana impermeabilizante, `k` Asfaltos. Propuesta: usarla como complemento del bloque de costos, con el i.a. por inciso.
+
+**Población** (`jurisdiccion_cod = 06`). No hay fila de total: el ETL suma los valores de `sexo_cod` 1 (Mujer) y 2 (Varón). Códigos de partido verificados: Exaltación de la Cruz `06266`, General Rodríguez `06364`, Luján `06497`, Marcos Paz `06525`, Mercedes `06532`, Moreno `06560`, Pilar `06638`.
 
 ---
 
@@ -147,10 +189,11 @@ No aparecen en Series de Tiempo ("permisos" devuelve 0 resultados) ni en el cat�
 | Indicador | Último período | Fuente |
 |---|---|---|
 | ISAC e insumos | 2026-08 | Series de Tiempo |
-| ICC | 2026-09 (según el plan) | API INDEC ⏳ |
-| IPC | 2026-09 en INDEC/BCRA · 2026-08 en Series de Tiempo | API INDEC ⏳ / BCRA ✅ |
-| EMAE | 2026-07 (Series de Tiempo, nivel general) | — |
-| Salarios | 2026-07 | Series de Tiempo |
+| ICC | 2026-09 | API INDEC ✅ |
+| IPC | 2026-09 (INDEC y BCRA) · 2026-08 en Series de Tiempo | API INDEC ✅ |
+| EMAE (general y construcción) | 2026-08 | API INDEC ✅ |
+| SIPM | 2026-09 | API INDEC ✅ |
+| Salarios | 2026-08 | API INDEC ✅ |
 | Empleo construcción | 2026-06 | Series de Tiempo |
 | Dólar, tasas, UVA | diario (hasta 05/11) | BCRA |
 | REM | 2026-10 | BCRA |
