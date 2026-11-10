@@ -1,0 +1,146 @@
+{
+ "id": "sipm_pinturas",
+ "nombre": "Pinturas, barnices y enduidos",
+ "unidad": "Índice dic-15=100",
+ "frecuencia": "mensual",
+ "naturaleza": "precio",
+ "fuente": "INDEC",
+ "fuenteUrl": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-5-32",
+ "actualizado": "2026-11-10T17:28:48.048Z",
+ "ultimoPeriodo": "2026-09",
+ "datos": [
+  {
+   "periodo": "2024-01",
+   "valor": 10882.1916
+  },
+  {
+   "periodo": "2024-02",
+   "valor": 11216.9843
+  },
+  {
+   "periodo": "2024-03",
+   "valor": 11526.5881
+  },
+  {
+   "periodo": "2024-04",
+   "valor": 12264.5252
+  },
+  {
+   "periodo": "2024-05",
+   "valor": 13062.7089
+  },
+  {
+   "periodo": "2024-06",
+   "valor": 13262.8927
+  },
+  {
+   "periodo": "2024-07",
+   "valor": 13822.769
+  },
+  {
+   "periodo": "2024-08",
+   "valor": 13941.1608
+  },
+  {
+   "periodo": "2024-09",
+   "valor": 14457.9217
+  },
+  {
+   "periodo": "2024-10",
+   "valor": 14541.4158
+  },
+  {
+   "periodo": "2024-11",
+   "valor": 14551.7644
+  },
+  {
+   "periodo": "2024-12",
+   "valor": 14844.5045
+  },
+  {
+   "periodo": "2025-01",
+   "valor": 14949.4305
+  },
+  {
+   "periodo": "2025-02",
+   "valor": 14950.8376
+  },
+  {
+   "periodo": "2025-03",
+   "valor": 14941.486
+  },
+  {
+   "periodo": "2025-04",
+   "valor": 15276.7889
+  },
+  {
+   "periodo": "2025-05",
+   "valor": 15408.4536
+  },
+  {
+   "periodo": "2025-06",
+   "valor": 15364.5417
+  },
+  {
+   "periodo": "2025-07",
+   "valor": 15691.5182
+  },
+  {
+   "periodo": "2025-08",
+   "valor": 15569.1863
+  },
+  {
+   "periodo": "2025-09",
+   "valor": 15831.6111
+  },
+  {
+   "periodo": "2025-10",
+   "valor": 16310.9215
+  },
+  {
+   "periodo": "2025-11",
+   "valor": 16457.6868
+  },
+  {
+   "periodo": "2025-12",
+   "valor": 16731.5162
+  },
+  {
+   "periodo": "2026-01",
+   "valor": 16750.2711
+  },
+  {
+   "periodo": "2026-02",
+   "valor": 16748.7652
+  },
+  {
+   "periodo": "2026-03",
+   "valor": 16908.1415
+  },
+  {
+   "periodo": "2026-04",
+   "valor": 17272.6925
+  },
+  {
+   "periodo": "2026-05",
+   "valor": 18120.7014
+  },
+  {
+   "periodo": "2026-06",
+   "valor": 18417.3901
+  },
+  {
+   "periodo": "2026-07",
+   "valor": 18629.3064
+  },
+  {
+   "periodo": "2026-08",
+   "valor": 18814.8984
+  },
+  {
+   "periodo": "2026-09",
+   "valor": 19145.5021,
+   "obs": "* Dato provisorio"
+  }
+ ]
+}

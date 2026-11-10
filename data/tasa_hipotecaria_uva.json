@@ -1,0 +1,149 @@
+{
+ "id": "tasa_hipotecaria_uva",
+ "nombre": "Tasa de préstamos hipotecarios UVA",
+ "unidad": "% nominal anual",
+ "frecuencia": "mensual",
+ "naturaleza": "nivel",
+ "fuente": "BCRA",
+ "fuenteUrl": "https://www.bcra.gob.ar/PublicacionesEstadisticas/Principales_variables.asp",
+ "actualizado": "2026-11-10T17:28:57.766Z",
+ "ultimoPeriodo": "2026-10",
+ "datos": [
+  {
+   "periodo": "2024-01",
+   "valor": 0.28
+  },
+  {
+   "periodo": "2024-02",
+   "valor": 0.2
+  },
+  {
+   "periodo": "2024-03",
+   "valor": 0.49
+  },
+  {
+   "periodo": "2024-04",
+   "valor": 1.78
+  },
+  {
+   "periodo": "2024-05",
+   "valor": 2.65
+  },
+  {
+   "periodo": "2024-06",
+   "valor": 3.27
+  },
+  {
+   "periodo": "2024-07",
+   "valor": 3.93
+  },
+  {
+   "periodo": "2024-08",
+   "valor": 4.4
+  },
+  {
+   "periodo": "2024-09",
+   "valor": 4.83
+  },
+  {
+   "periodo": "2024-10",
+   "valor": 5
+  },
+  {
+   "periodo": "2024-11",
+   "valor": 5.01
+  },
+  {
+   "periodo": "2024-12",
+   "valor": 5.22
+  },
+  {
+   "periodo": "2025-01",
+   "valor": 5.22
+  },
+  {
+   "periodo": "2025-02",
+   "valor": 5.4
+  },
+  {
+   "periodo": "2025-03",
+   "valor": 5.58
+  },
+  {
+   "periodo": "2025-04",
+   "valor": 5.8
+  },
+  {
+   "periodo": "2025-05",
+   "valor": 5.95
+  },
+  {
+   "periodo": "2025-06",
+   "valor": 6.04
+  },
+  {
+   "periodo": "2025-07",
+   "valor": 6.17
+  },
+  {
+   "periodo": "2025-08",
+   "valor": 6.32
+  },
+  {
+   "periodo": "2025-09",
+   "valor": 6.34
+  },
+  {
+   "periodo": "2025-10",
+   "valor": 6.14
+  },
+  {
+   "periodo": "2025-11",
+   "valor": 5.9
+  },
+  {
+   "periodo": "2025-12",
+   "valor": 5.77
+  },
+  {
+   "periodo": "2026-01",
+   "valor": 5.59
+  },
+  {
+   "periodo": "2026-02",
+   "valor": 5.93
+  },
+  {
+   "periodo": "2026-03",
+   "valor": 6.37
+  },
+  {
+   "periodo": "2026-04",
+   "valor": 6.66
+  },
+  {
+   "periodo": "2026-05",
+   "valor": 6.92
+  },
+  {
+   "periodo": "2026-06",
+   "valor": 7.02
+  },
+  {
+   "periodo": "2026-07",
+   "valor": 6.99
+  },
+  {
+   "periodo": "2026-08",
+   "valor": 6.91
+  },
+  {
+   "periodo": "2026-09",
+   "valor": 6.81
+  },
+  {
+   "periodo": "2026-10",
+   "valor": 6.65
+  }
+ ]
+}

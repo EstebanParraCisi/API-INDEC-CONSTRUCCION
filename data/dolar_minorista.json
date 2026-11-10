@@ -1,0 +1,154 @@
+{
+ "id": "dolar_minorista",
+ "nombre": "Dólar minorista (promedio vendedor), promedio mensual",
+ "unidad": "$ por USD",
+ "frecuencia": "mensual",
+ "naturaleza": "nivel",
+ "fuente": "BCRA",
+ "fuenteUrl": "https://www.bcra.gob.ar/PublicacionesEstadisticas/Principales_variables.asp",
+ "actualizado": "2026-11-10T17:28:56.273Z",
+ "ultimoPeriodo": "2026-11",
+ "datos": [
+  {
+   "periodo": "2024-01",
+   "valor": 863.961818181818
+  },
+  {
+   "periodo": "2024-02",
+   "valor": 880.5984210526317
+  },
+  {
+   "periodo": "2024-03",
+   "valor": 895.1273684210526
+  },
+  {
+   "periodo": "2024-04",
+   "valor": 911.8464999999997
+  },
+  {
+   "periodo": "2024-05",
+   "valor": 927.3650000000001
+  },
+  {
+   "periodo": "2024-06",
+   "valor": 942.2035294117647
+  },
+  {
+   "periodo": "2024-07",
+   "valor": 961.7095454545453
+  },
+  {
+   "periodo": "2024-08",
+   "valor": 981.8163636363638
+  },
+  {
+   "periodo": "2024-09",
+   "valor": 996.4938095238093
+  },
+  {
+   "periodo": "2024-10",
+   "valor": 1013.2004545454547
+  },
+  {
+   "periodo": "2024-11",
+   "valor": 1030.782105263158
+  },
+  {
+   "periodo": "2024-12",
+   "valor": 1049.3321052631577
+  },
+  {
+   "periodo": "2025-01",
+   "valor": 1070.7154545454543
+  },
+  {
+   "periodo": "2025-02",
+   "valor": 1087.2884999999999
+  },
+  {
+   "periodo": "2025-03",
+   "valor": 1098.7716666666668
+  },
+  {
+   "periodo": "2025-04",
+   "valor": 1151.4347368421052
+  },
+  {
+   "periodo": "2025-05",
+   "valor": 1170.5194999999999
+  },
+  {
+   "periodo": "2025-06",
+   "valor": 1198.463684210526
+  },
+  {
+   "periodo": "2025-07",
+   "valor": 1287.597727272727
+  },
+  {
+   "periodo": "2025-08",
+   "valor": 1343.7789999999998
+  },
+  {
+   "periodo": "2025-09",
+   "valor": 1423.6127272727272
+  },
+  {
+   "periodo": "2025-10",
+   "valor": 1465.281363636364
+  },
+  {
+   "periodo": "2025-11",
+   "valor": 1455.4529411764704
+  },
+  {
+   "periodo": "2025-12",
+   "valor": 1471.594736842105
+  },
+  {
+   "periodo": "2026-01",
+   "valor": 1469.9376190476194
+  },
+  {
+   "periodo": "2026-02",
+   "valor": 1431.877777777778
+  },
+  {
+   "periodo": "2026-03",
+   "valor": 1418.6200000000001
+  },
+  {
+   "periodo": "2026-04",
+   "valor": 1407.2875000000001
+  },
+  {
+   "periodo": "2026-05",
+   "valor": 1419.192105263158
+  },
+  {
+   "periodo": "2026-06",
+   "valor": 1471.462380952381
+  },
+  {
+   "periodo": "2026-07",
+   "valor": 1509.0409523809524
+  },
+  {
+   "periodo": "2026-08",
+   "valor": 1521.62
+  },
+  {
+   "periodo": "2026-09",
+   "valor": 1534.7759090909092
+  },
+  {
+   "periodo": "2026-10",
+   "valor": 1545.814761904762
+  },
+  {
+   "periodo": "2026-11",
+   "valor": 1570.765,
+   "obs": "Mes en curso: promedio parcial de 4 días hasta el 2026-11-05"
+  }
+ ]
+}

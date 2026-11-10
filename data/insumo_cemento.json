@@ -1,0 +1,142 @@
+{
+ "id": "insumo_cemento",
+ "nombre": "Cemento portland",
+ "unidad": "Índice 2004=100",
+ "frecuencia": "mensual",
+ "naturaleza": "volumen",
+ "fuente": "INDEC (ISAC) vía Series de Tiempo",
+ "fuenteUrl": "https://datos.gob.ar/series/?ids=33.4_ISAC_CEMENAND_0_0_21_24",
+ "actualizado": "2026-11-10T17:28:39.852Z",
+ "ultimoPeriodo": "2026-08",
+ "nota": "INDEC no publica la serie original de este insumo; se usa la serie desestacionalizada. La variación interanual compara mes contra mismo mes y es muy parecida, aunque no idéntica, a la de la serie original.",
+ "datos": [
+  {
+   "periodo": "2024-01",
+   "valor": 162.82101941045
+  },
+  {
+   "periodo": "2024-02",
+   "valor": 151.819704059449
+  },
+  {
+   "periodo": "2024-03",
+   "valor": 129.334601068088
+  },
+  {
+   "periodo": "2024-04",
+   "valor": 132.242741568736
+  },
+  {
+   "periodo": "2024-05",
+   "valor": 153.628428032071
+  },
+  {
+   "periodo": "2024-06",
+   "valor": 153.50705511462
+  },
+  {
+   "periodo": "2024-07",
+   "valor": 171.814988125502
+  },
+  {
+   "periodo": "2024-08",
+   "valor": 158.714048888197
+  },
+  {
+   "periodo": "2024-09",
+   "valor": 173.226234494774
+  },
+  {
+   "periodo": "2024-10",
+   "valor": 154.670747431626
+  },
+  {
+   "periodo": "2024-11",
+   "valor": 163.246275852663
+  },
+  {
+   "periodo": "2024-12",
+   "valor": 165.221824562326
+  },
+  {
+   "periodo": "2025-01",
+   "valor": 174.315761867373
+  },
+  {
+   "periodo": "2025-02",
+   "valor": 169.956081100464
+  },
+  {
+   "periodo": "2025-03",
+   "valor": 156.762410586511
+  },
+  {
+   "periodo": "2025-04",
+   "valor": 168.315297658191
+  },
+  {
+   "periodo": "2025-05",
+   "valor": 162.743861601325
+  },
+  {
+   "periodo": "2025-06",
+   "valor": 168.976665714002
+  },
+  {
+   "periodo": "2025-07",
+   "valor": 164.281506704935
+  },
+  {
+   "periodo": "2025-08",
+   "valor": 163.925264985097
+  },
+  {
+   "periodo": "2025-09",
+   "valor": 164.036022760591
+  },
+  {
+   "periodo": "2025-10",
+   "valor": 166.990415075264
+  },
+  {
+   "periodo": "2025-11",
+   "valor": 165.196014268716
+  },
+  {
+   "periodo": "2025-12",
+   "valor": 160.773325060215
+  },
+  {
+   "periodo": "2026-01",
+   "valor": 166.782174812133
+  },
+  {
+   "periodo": "2026-02",
+   "valor": 160.827689709705
+  },
+  {
+   "periodo": "2026-03",
+   "valor": 165.23480662928
+  },
+  {
+   "periodo": "2026-04",
+   "valor": 150.437278106849
+  },
+  {
+   "periodo": "2026-05",
+   "valor": 166.063092379579
+  },
+  {
+   "periodo": "2026-06",
+   "valor": 158.944842000697
+  },
+  {
+   "periodo": "2026-07",
+   "valor": 152.027274636736
+  },
+  {
+   "periodo": "2026-08",
+   "valor": 156.778274554777
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "id": "salarios_total",
+ "nombre": "Índice de salarios — total",
+ "unidad": "Índice oct-16=100",
+ "frecuencia": "mensual",
+ "naturaleza": "precio",
+ "fuente": "INDEC",
+ "fuenteUrl": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-4-31-61",
+ "actualizado": "2026-11-10T17:28:54.901Z",
+ "ultimoPeriodo": "2026-08",
+ "datos": [
+  {
+   "periodo": "2024-01",
+   "valor": 2734.97
+  },
+  {
+   "periodo": "2024-02",
+   "valor": 3099.2
+  },
+  {
+   "periodo": "2024-03",
+   "valor": 3417.34
+  },
+  {
+   "periodo": "2024-04",
+   "valor": 3764.21
+  },
+  {
+   "periodo": "2024-05",
+   "valor": 4077.32
+  },
+  {
+   "periodo": "2024-06",
+   "valor": 4329.8
+  },
+  {
+   "periodo": "2024-07",
+   "valor": 4653.26
+  },
+  {
+   "periodo": "2024-08",
+   "valor": 4916.19
+  },
+  {
+   "periodo": "2024-09",
+   "valor": 5147.61
+  },
+  {
+   "periodo": "2024-10",
+   "valor": 5383.96
+  },
+  {
+   "periodo": "2024-11",
+   "valor": 5591
+  },
+  {
+   "periodo": "2024-12",
+   "valor": 5765.54
+  },
+  {
+   "periodo": "2025-01",
+   "valor": 5934.47
+  },
+  {
+   "periodo": "2025-02",
+   "valor": 6161.52
+  },
+  {
+   "periodo": "2025-03",
+   "valor": 6344.81
+  },
+  {
+   "periodo": "2025-04",
+   "valor": 6559.31
+  },
+  {
+   "periodo": "2025-05",
+   "valor": 6755.22
+  },
+  {
+   "periodo": "2025-06",
+   "valor": 6956.46
+  },
+  {
+   "periodo": "2025-07",
+   "valor": 7129.22
+  },
+  {
+   "periodo": "2025-08",
+   "valor": 7354.44
+  },
+  {
+   "periodo": "2025-09",
+   "valor": 7518.03
+  },
+  {
+   "periodo": "2025-10",
+   "valor": 7705.88
+  },
+  {
+   "periodo": "2025-11",
+   "valor": 7843.14
+  },
+  {
+   "periodo": "2025-12",
+   "valor": 7969.6
+  },
+  {
+   "periodo": "2026-01",
+   "valor": 8171.66
+  },
+  {
+   "periodo": "2026-02",
+   "valor": 8370.04
+  },
+  {
+   "periodo": "2026-03",
+   "valor": 8654.99
+  },
+  {
+   "periodo": "2026-04",
+   "valor": 8978.1
+  },
+  {
+   "periodo": "2026-05",
+   "valor": 9177.39
+  },
+  {
+   "periodo": "2026-06",
+   "valor": 9442.5
+  },
+  {
+   "periodo": "2026-07",
+   "valor": 9708.64
+  },
+  {
+   "periodo": "2026-08",
+   "valor": 9973.55
+  }
+ ]
+}

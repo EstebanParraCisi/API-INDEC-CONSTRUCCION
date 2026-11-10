@@ -1,0 +1,146 @@
+{
+ "id": "sipm_cemento_cal",
+ "nombre": "Cemento y cal",
+ "unidad": "Índice dic-15=100",
+ "frecuencia": "mensual",
+ "naturaleza": "precio",
+ "fuente": "INDEC",
+ "fuenteUrl": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-5-32",
+ "actualizado": "2026-11-10T17:28:44.654Z",
+ "ultimoPeriodo": "2026-09",
+ "datos": [
+  {
+   "periodo": "2024-01",
+   "valor": 7492.112
+  },
+  {
+   "periodo": "2024-02",
+   "valor": 9413.7626
+  },
+  {
+   "periodo": "2024-03",
+   "valor": 11044.2252
+  },
+  {
+   "periodo": "2024-04",
+   "valor": 11467.9376
+  },
+  {
+   "periodo": "2024-05",
+   "valor": 12293.1803
+  },
+  {
+   "periodo": "2024-06",
+   "valor": 12486.2259
+  },
+  {
+   "periodo": "2024-07",
+   "valor": 12548.422
+  },
+  {
+   "periodo": "2024-08",
+   "valor": 12715.109
+  },
+  {
+   "periodo": "2024-09",
+   "valor": 13189.5077
+  },
+  {
+   "periodo": "2024-10",
+   "valor": 13242.3592
+  },
+  {
+   "periodo": "2024-11",
+   "valor": 13620.2066
+  },
+  {
+   "periodo": "2024-12",
+   "valor": 13818.9566
+  },
+  {
+   "periodo": "2025-01",
+   "valor": 13956.565
+  },
+  {
+   "periodo": "2025-02",
+   "valor": 14242.4066
+  },
+  {
+   "periodo": "2025-03",
+   "valor": 14389.7958
+  },
+  {
+   "periodo": "2025-04",
+   "valor": 14683.0851
+  },
+  {
+   "periodo": "2025-05",
+   "valor": 14704.9764
+  },
+  {
+   "periodo": "2025-06",
+   "valor": 15007.6042
+  },
+  {
+   "periodo": "2025-07",
+   "valor": 15147.5527
+  },
+  {
+   "periodo": "2025-08",
+   "valor": 15752.3609
+  },
+  {
+   "periodo": "2025-09",
+   "valor": 16321.5218
+  },
+  {
+   "periodo": "2025-10",
+   "valor": 16625.9433
+  },
+  {
+   "periodo": "2025-11",
+   "valor": 17263.5171
+  },
+  {
+   "periodo": "2025-12",
+   "valor": 17783.3811
+  },
+  {
+   "periodo": "2026-01",
+   "valor": 18345.046
+  },
+  {
+   "periodo": "2026-02",
+   "valor": 18704.562
+  },
+  {
+   "periodo": "2026-03",
+   "valor": 19209.0797
+  },
+  {
+   "periodo": "2026-04",
+   "valor": 19901.0338
+  },
+  {
+   "periodo": "2026-05",
+   "valor": 20242.0818
+  },
+  {
+   "periodo": "2026-06",
+   "valor": 20917.9021
+  },
+  {
+   "periodo": "2026-07",
+   "valor": 21446.1632
+  },
+  {
+   "periodo": "2026-08",
+   "valor": 21966.56
+  },
+  {
+   "periodo": "2026-09",
+   "valor": 22453.5411,
+   "obs": "* Dato provisorio"
+  }
+ ]
+}

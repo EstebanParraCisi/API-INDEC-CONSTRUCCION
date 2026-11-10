@@ -1,0 +1,145 @@
+{
+ "id": "redet_hormigon",
+ "nombre": "Hormigón elaborado",
+ "unidad": "Índice oct-15=100",
+ "frecuencia": "mensual",
+ "naturaleza": "precio",
+ "fuente": "INDEC",
+ "fuenteUrl": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-5-112",
+ "actualizado": "2026-11-10T17:28:50.638Z",
+ "ultimoPeriodo": "2026-09",
+ "datos": [
+  {
+   "periodo": "2024-01",
+   "valor": 7082.3344
+  },
+  {
+   "periodo": "2024-02",
+   "valor": 7955.3541
+  },
+  {
+   "periodo": "2024-03",
+   "valor": 8396.0393
+  },
+  {
+   "periodo": "2024-04",
+   "valor": 8629.0132
+  },
+  {
+   "periodo": "2024-05",
+   "valor": 8909.9733
+  },
+  {
+   "periodo": "2024-06",
+   "valor": 9005.0105
+  },
+  {
+   "periodo": "2024-07",
+   "valor": 9222.5997
+  },
+  {
+   "periodo": "2024-08",
+   "valor": 9406.3944
+  },
+  {
+   "periodo": "2024-09",
+   "valor": 9479.0513
+  },
+  {
+   "periodo": "2024-10",
+   "valor": 9650.8112
+  },
+  {
+   "periodo": "2024-11",
+   "valor": 9690.962
+  },
+  {
+   "periodo": "2024-12",
+   "valor": 9821.2636
+  },
+  {
+   "periodo": "2025-01",
+   "valor": 9941.9164
+  },
+  {
+   "periodo": "2025-02",
+   "valor": 9994.9609
+  },
+  {
+   "periodo": "2025-03",
+   "valor": 10048.2535
+  },
+  {
+   "periodo": "2025-04",
+   "valor": 10021.7312
+  },
+  {
+   "periodo": "2025-05",
+   "valor": 10001.2789
+  },
+  {
+   "periodo": "2025-06",
+   "valor": 10019.4503
+  },
+  {
+   "periodo": "2025-07",
+   "valor": 9895.9248
+  },
+  {
+   "periodo": "2025-08",
+   "valor": 10183.9759
+  },
+  {
+   "periodo": "2025-09",
+   "valor": 10335.398
+  },
+  {
+   "periodo": "2025-10",
+   "valor": 10693.5293
+  },
+  {
+   "periodo": "2025-11",
+   "valor": 10705.2777
+  },
+  {
+   "periodo": "2025-12",
+   "valor": 10925.1479
+  },
+  {
+   "periodo": "2026-01",
+   "valor": 11276.6559
+  },
+  {
+   "periodo": "2026-02",
+   "valor": 11324.5276
+  },
+  {
+   "periodo": "2026-03",
+   "valor": 11577.8488
+  },
+  {
+   "periodo": "2026-04",
+   "valor": 12091.2865
+  },
+  {
+   "periodo": "2026-05",
+   "valor": 12246.2207
+  },
+  {
+   "periodo": "2026-06",
+   "valor": 12581.4564
+  },
+  {
+   "periodo": "2026-07",
+   "valor": 12817.1025
+  },
+  {
+   "periodo": "2026-08",
+   "valor": 13015.7473
+  },
+  {
+   "periodo": "2026-09",
+   "valor": 13361.109
+  }
+ ]
+}

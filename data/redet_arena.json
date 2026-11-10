@@ -1,0 +1,145 @@
+{
+ "id": "redet_arena",
+ "nombre": "Arena fina",
+ "unidad": "Índice oct-15=100",
+ "frecuencia": "mensual",
+ "naturaleza": "precio",
+ "fuente": "INDEC",
+ "fuenteUrl": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-5-112",
+ "actualizado": "2026-11-10T17:28:51.622Z",
+ "ultimoPeriodo": "2026-09",
+ "datos": [
+  {
+   "periodo": "2024-01",
+   "valor": 6591.2544
+  },
+  {
+   "periodo": "2024-02",
+   "valor": 7288.4567
+  },
+  {
+   "periodo": "2024-03",
+   "valor": 7634.5807
+  },
+  {
+   "periodo": "2024-04",
+   "valor": 8892.3749
+  },
+  {
+   "periodo": "2024-05",
+   "valor": 9044.0451
+  },
+  {
+   "periodo": "2024-06",
+   "valor": 9143.8125
+  },
+  {
+   "periodo": "2024-07",
+   "valor": 9238.0127
+  },
+  {
+   "periodo": "2024-08",
+   "valor": 9291.8111
+  },
+  {
+   "periodo": "2024-09",
+   "valor": 9429.9013
+  },
+  {
+   "periodo": "2024-10",
+   "valor": 9401.5856
+  },
+  {
+   "periodo": "2024-11",
+   "valor": 9524.4609
+  },
+  {
+   "periodo": "2024-12",
+   "valor": 9598.8443
+  },
+  {
+   "periodo": "2025-01",
+   "valor": 9538.3439
+  },
+  {
+   "periodo": "2025-02",
+   "valor": 10030.1409
+  },
+  {
+   "periodo": "2025-03",
+   "valor": 10123.1431
+  },
+  {
+   "periodo": "2025-04",
+   "valor": 10251.5011
+  },
+  {
+   "periodo": "2025-05",
+   "valor": 10133.7068
+  },
+  {
+   "periodo": "2025-06",
+   "valor": 10105.8562
+  },
+  {
+   "periodo": "2025-07",
+   "valor": 10115.1163
+  },
+  {
+   "periodo": "2025-08",
+   "valor": 10209.1473
+  },
+  {
+   "periodo": "2025-09",
+   "valor": 10386.3707
+  },
+  {
+   "periodo": "2025-10",
+   "valor": 10630.0564
+  },
+  {
+   "periodo": "2025-11",
+   "valor": 10720.3453
+  },
+  {
+   "periodo": "2025-12",
+   "valor": 10961.8605
+  },
+  {
+   "periodo": "2026-01",
+   "valor": 11132.6427
+  },
+  {
+   "periodo": "2026-02",
+   "valor": 11372.1283
+  },
+  {
+   "periodo": "2026-03",
+   "valor": 11687.5828
+  },
+  {
+   "periodo": "2026-04",
+   "valor": 12095.0176
+  },
+  {
+   "periodo": "2026-05",
+   "valor": 12141.3249
+  },
+  {
+   "periodo": "2026-06",
+   "valor": 12211.0923
+  },
+  {
+   "periodo": "2026-07",
+   "valor": 12495.4686
+  },
+  {
+   "periodo": "2026-08",
+   "valor": 12788.9922
+  },
+  {
+   "periodo": "2026-09",
+   "valor": 12904.9471
+  }
+ ]
+}

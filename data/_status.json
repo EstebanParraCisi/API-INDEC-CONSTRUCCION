@@ -1,0 +1,105 @@
+{
+  "generado": "2026-11-10T17:29:08.238Z",
+  "fuentes": {
+    "seriesTiempo": {
+      "ok": true,
+      "ultimaCorrida": "2026-11-10T17:28:32.258Z",
+      "ultimaCorridaOk": "2026-11-10T17:28:32.258Z",
+      "series": [
+        "isac_general",
+        "isac_desest",
+        "insumo_cemento",
+        "insumo_hormigon",
+        "insumo_hierro",
+        "insumo_ladrillos",
+        "insumo_cal",
+        "insumo_yeso",
+        "insumo_placas_yeso",
+        "insumo_pinturas",
+        "insumo_ceramicos",
+        "insumo_sanitarios",
+        "insumo_asfalto",
+        "insumo_mosaicos",
+        "empleo_construccion"
+      ]
+    },
+    "indec": {
+      "ok": true,
+      "ultimaCorrida": "2026-11-10T17:28:32.258Z",
+      "ultimaCorridaOk": "2026-11-10T17:28:32.258Z",
+      "series": [
+        "icc_general",
+        "icc_materiales",
+        "icc_mano_obra",
+        "icc_gastos_generales",
+        "sipm_general",
+        "sipm_cemento_cal",
+        "sipm_hormigon_yeso",
+        "sipm_ladrillos",
+        "sipm_ceramicos",
+        "sipm_hierro_acero",
+        "sipm_metalicos_estructurales",
+        "sipm_pinturas",
+        "sipm_vidrio",
+        "sipm_plasticos",
+        "sipm_maderas",
+        "redet_cemento",
+        "redet_hormigon",
+        "redet_hierro",
+        "redet_arena",
+        "redet_ceramicos",
+        "redet_canos_pvc",
+        "redet_sanitaria",
+        "redet_albanileria",
+        "emae_construccion",
+        "emae_general",
+        "ipc_gba",
+        "ipc_nacional",
+        "salarios_privado_registrado",
+        "salarios_total",
+        "poblacion_06497",
+        "poblacion_06560",
+        "poblacion_06364",
+        "poblacion_06638",
+        "poblacion_06525",
+        "poblacion_06532",
+        "poblacion_06266"
+      ]
+    },
+    "bcra": {
+      "ok": true,
+      "ultimaCorrida": "2026-11-10T17:28:32.258Z",
+      "ultimaCorridaOk": "2026-11-10T17:28:32.258Z",
+      "series": [
+        "dolar_mayorista",
+        "dolar_mayorista_diario",
+        "dolar_minorista",
+        "dolar_minorista_diario",
+        "tasa_tamar",
+        "tasa_badlar",
+        "uva",
+        "hipotecarios_stock",
+        "tasa_hipotecaria_uva",
+        "rem_inflacion_12m"
+      ]
+    },
+    "manual": {
+      "ok": true,
+      "ultimaCorrida": "2026-11-10T17:29:08.238Z",
+      "ultimaCorridaOk": "2026-11-10T17:29:08.238Z",
+      "series": [
+        "despachos_cemento",
+        "construya_indice",
+        "construya_var_mm_desest",
+        "escrituras_pba_compraventas",
+        "escrituras_pba_hipotecas",
+        "cac_costo_m2",
+        "permisos_superficie",
+        "permisos_cantidad",
+        "permisos_superficie_moreno",
+        "permisos_superficie_general_rodriguez",
+        "permisos_superficie_mercedes"
+      ]
+    }
+  }
+}

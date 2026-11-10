@@ -1,0 +1,154 @@
+{
+ "id": "tasa_badlar",
+ "nombre": "Tasa BADLAR bancos privados, promedio mensual",
+ "unidad": "% nominal anual",
+ "frecuencia": "mensual",
+ "naturaleza": "nivel",
+ "fuente": "BCRA",
+ "fuenteUrl": "https://www.bcra.gob.ar/PublicacionesEstadisticas/Principales_variables.asp",
+ "actualizado": "2026-11-10T17:28:56.896Z",
+ "ultimoPeriodo": "2026-11",
+ "datos": [
+  {
+   "periodo": "2024-01",
+   "valor": 109.16761363636364
+  },
+  {
+   "periodo": "2024-02",
+   "valor": 108.89473684210526
+  },
+  {
+   "periodo": "2024-03",
+   "valor": 85.41447368421052
+  },
+  {
+   "periodo": "2024-04",
+   "valor": 62.66875
+  },
+  {
+   "periodo": "2024-05",
+   "valor": 35.58522727272727
+  },
+  {
+   "periodo": "2024-06",
+   "valor": 33.4264705882353
+  },
+  {
+   "periodo": "2024-07",
+   "valor": 36.90625
+  },
+  {
+   "periodo": "2024-08",
+   "valor": 38.84375
+  },
+  {
+   "periodo": "2024-09",
+   "valor": 39.38095238095238
+  },
+  {
+   "periodo": "2024-10",
+   "valor": 40.50852272727273
+  },
+  {
+   "periodo": "2024-11",
+   "valor": 36.171052631578945
+  },
+  {
+   "periodo": "2024-12",
+   "valor": 32.875
+  },
+  {
+   "periodo": "2025-01",
+   "valor": 31.49715909090909
+  },
+  {
+   "periodo": "2025-02",
+   "valor": 28.478125
+  },
+  {
+   "periodo": "2025-03",
+   "valor": 29.506944444444443
+  },
+  {
+   "periodo": "2025-04",
+   "valor": 33.1546052631579
+  },
+  {
+   "periodo": "2025-05",
+   "valor": 32.753125
+  },
+  {
+   "periodo": "2025-06",
+   "valor": 32.161184210526315
+  },
+  {
+   "periodo": "2025-07",
+   "valor": 32.49715909090909
+  },
+  {
+   "periodo": "2025-08",
+   "valor": 48.03125
+  },
+  {
+   "periodo": "2025-09",
+   "valor": 48.42897727272727
+  },
+  {
+   "periodo": "2025-10",
+   "valor": 46.16761363636363
+  },
+  {
+   "periodo": "2025-11",
+   "valor": 32.025735294117645
+  },
+  {
+   "periodo": "2025-12",
+   "valor": 26.460526315789473
+  },
+  {
+   "periodo": "2026-01",
+   "valor": 31.202380952380953
+  },
+  {
+   "periodo": "2026-02",
+   "valor": 30.791666666666668
+  },
+  {
+   "periodo": "2026-03",
+   "valor": 27.56875
+  },
+  {
+   "periodo": "2026-04",
+   "valor": 22.446875
+  },
+  {
+   "periodo": "2026-05",
+   "valor": 21.345394736842106
+  },
+  {
+   "periodo": "2026-06",
+   "valor": 20.69047619047619
+  },
+  {
+   "periodo": "2026-07",
+   "valor": 21.31845238095238
+  },
+  {
+   "periodo": "2026-08",
+   "valor": 22.721875
+  },
+  {
+   "periodo": "2026-09",
+   "valor": 22.46875
+  },
+  {
+   "periodo": "2026-10",
+   "valor": 22.625
+  },
+  {
+   "periodo": "2026-11",
+   "valor": 22.1875,
+   "obs": "Mes en curso: promedio parcial de 3 días hasta el 2026-11-04"
+  }
+ ]
+}

@@ -1,0 +1,69 @@
+{
+ "id": "poblacion_06532",
+ "nombre": "Población de Mercedes",
+ "unidad": "Habitantes (al 1° de julio)",
+ "frecuencia": "anual",
+ "naturaleza": "nivel",
+ "fuente": "INDEC (estimaciones de población por departamento 2022–2035)",
+ "fuenteUrl": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-2-24-119",
+ "actualizado": "2026-11-10T17:28:55.436Z",
+ "ultimoPeriodo": "2035",
+ "datos": [
+  {
+   "periodo": "2022",
+   "valor": 72504
+  },
+  {
+   "periodo": "2023",
+   "valor": 72552
+  },
+  {
+   "periodo": "2024",
+   "valor": 72618
+  },
+  {
+   "periodo": "2025",
+   "valor": 72681
+  },
+  {
+   "periodo": "2026",
+   "valor": 72731
+  },
+  {
+   "periodo": "2027",
+   "valor": 72772
+  },
+  {
+   "periodo": "2028",
+   "valor": 72804
+  },
+  {
+   "periodo": "2029",
+   "valor": 72835
+  },
+  {
+   "periodo": "2030",
+   "valor": 72871
+  },
+  {
+   "periodo": "2031",
+   "valor": 72916
+  },
+  {
+   "periodo": "2032",
+   "valor": 72971
+  },
+  {
+   "periodo": "2033",
+   "valor": 73034
+  },
+  {
+   "periodo": "2034",
+   "valor": 73106
+  },
+  {
+   "periodo": "2035",
+   "valor": 73186
+  }
+ ]
+}

@@ -1,0 +1,12 @@
+{
+ "id": "construya_var_mm_desest",
+ "nombre": "Índice Construya — variación mensual desestacionalizada (publicada)",
+ "unidad": "%",
+ "frecuencia": "mensual",
+ "naturaleza": "nivel",
+ "fuente": "Grupo Construya",
+ "fuenteUrl": "https://www.grupoconstruya.com.ar/",
+ "actualizado": "2026-11-10T17:29:08.239Z",
+ "ultimoPeriodo": null,
+ "datos": []
+}

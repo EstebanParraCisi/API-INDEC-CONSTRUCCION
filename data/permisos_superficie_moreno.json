@@ -1,0 +1,141 @@
+{
+ "id": "permisos_superficie_moreno",
+ "nombre": "Superficie autorizada — Moreno",
+ "unidad": "m²",
+ "frecuencia": "mensual",
+ "naturaleza": "cantidad",
+ "fuente": "INDEC (permisos de edificación, 246 municipios)",
+ "fuenteUrl": "https://www.indec.gob.ar/ftp/cuadros/economia/permisos_edificacion_246_municipios.xlsx",
+ "actualizado": "2026-11-10T17:28:58.040Z",
+ "ultimoPeriodo": "2026-08",
+ "datos": [
+  {
+   "periodo": "2024-01",
+   "valor": 26701
+  },
+  {
+   "periodo": "2024-02",
+   "valor": 7207
+  },
+  {
+   "periodo": "2024-03",
+   "valor": 12404
+  },
+  {
+   "periodo": "2024-04",
+   "valor": 7591
+  },
+  {
+   "periodo": "2024-05",
+   "valor": 8020
+  },
+  {
+   "periodo": "2024-06",
+   "valor": 9542
+  },
+  {
+   "periodo": "2024-07",
+   "valor": 25111
+  },
+  {
+   "periodo": "2024-08",
+   "valor": 7331
+  },
+  {
+   "periodo": "2024-09",
+   "valor": 5382
+  },
+  {
+   "periodo": "2024-10",
+   "valor": 13367
+  },
+  {
+   "periodo": "2024-11",
+   "valor": 9895
+  },
+  {
+   "periodo": "2024-12",
+   "valor": 21379
+  },
+  {
+   "periodo": "2025-01",
+   "valor": 18490
+  },
+  {
+   "periodo": "2025-02",
+   "valor": 10271
+  },
+  {
+   "periodo": "2025-03",
+   "valor": 15997
+  },
+  {
+   "periodo": "2025-04",
+   "valor": 19934
+  },
+  {
+   "periodo": "2025-05",
+   "valor": 42852
+  },
+  {
+   "periodo": "2025-06",
+   "valor": 44951
+  },
+  {
+   "periodo": "2025-07",
+   "valor": 33897
+  },
+  {
+   "periodo": "2025-08",
+   "valor": 23056
+  },
+  {
+   "periodo": "2025-09",
+   "valor": 29486
+  },
+  {
+   "periodo": "2025-10",
+   "valor": 21483
+  },
+  {
+   "periodo": "2025-11",
+   "valor": 19051
+  },
+  {
+   "periodo": "2025-12",
+   "valor": 20354
+  },
+  {
+   "periodo": "2026-01",
+   "valor": 15843
+  },
+  {
+   "periodo": "2026-02",
+   "valor": 6148
+  },
+  {
+   "periodo": "2026-03",
+   "valor": 29167
+  },
+  {
+   "periodo": "2026-04",
+   "valor": 34395
+  },
+  {
+   "periodo": "2026-05",
+   "valor": 25001
+  },
+  {
+   "periodo": "2026-06",
+   "valor": 23125
+  },
+  {
+   "periodo": "2026-07",
+   "valor": 15031
+  },
+  {
+   "periodo": "2026-08",
+   "valor": 11732
+  }
+ ]
+}

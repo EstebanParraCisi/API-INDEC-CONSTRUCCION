@@ -1,0 +1,118 @@
+{
+ "id": "tasa_tamar",
+ "nombre": "Tasa TAMAR bancos privados, promedio mensual",
+ "unidad": "% nominal anual",
+ "frecuencia": "mensual",
+ "naturaleza": "nivel",
+ "fuente": "BCRA",
+ "fuenteUrl": "https://www.bcra.gob.ar/PublicacionesEstadisticas/Principales_variables.asp",
+ "actualizado": "2026-11-10T17:28:56.565Z",
+ "ultimoPeriodo": "2026-11",
+ "datos": [
+  {
+   "periodo": "2024-10",
+   "valor": 43.43181818181818
+  },
+  {
+   "periodo": "2024-11",
+   "valor": 38.76315789473684
+  },
+  {
+   "periodo": "2024-12",
+   "valor": 35.38486842105263
+  },
+  {
+   "periodo": "2025-01",
+   "valor": 33.59659090909091
+  },
+  {
+   "periodo": "2025-02",
+   "valor": 29.9625
+  },
+  {
+   "periodo": "2025-03",
+   "valor": 30.84375
+  },
+  {
+   "periodo": "2025-04",
+   "valor": 34.79276315789474
+  },
+  {
+   "periodo": "2025-05",
+   "valor": 34.1625
+  },
+  {
+   "periodo": "2025-06",
+   "valor": 33.70723684210526
+  },
+  {
+   "periodo": "2025-07",
+   "valor": 34.41193181818182
+  },
+  {
+   "periodo": "2025-08",
+   "valor": 53.403125
+  },
+  {
+   "periodo": "2025-09",
+   "valor": 52.06534090909091
+  },
+  {
+   "periodo": "2025-10",
+   "valor": 50.76136363636363
+  },
+  {
+   "periodo": "2025-11",
+   "valor": 33.88970588235294
+  },
+  {
+   "periodo": "2025-12",
+   "valor": 27.82236842105263
+  },
+  {
+   "periodo": "2026-01",
+   "valor": 33.88988095238095
+  },
+  {
+   "periodo": "2026-02",
+   "valor": 33.00347222222222
+  },
+  {
+   "periodo": "2026-03",
+   "valor": 29.059375
+  },
+  {
+   "periodo": "2026-04",
+   "valor": 23.384375
+  },
+  {
+   "periodo": "2026-05",
+   "valor": 22.8125
+  },
+  {
+   "periodo": "2026-06",
+   "valor": 22.175595238095237
+  },
+  {
+   "periodo": "2026-07",
+   "valor": 22.553571428571427
+  },
+  {
+   "periodo": "2026-08",
+   "valor": 24.30625
+  },
+  {
+   "periodo": "2026-09",
+   "valor": 23.789772727272727
+  },
+  {
+   "periodo": "2026-10",
+   "valor": 24.214285714285715
+  },
+  {
+   "periodo": "2026-11",
+   "valor": 23.833333333333332,
+   "obs": "Mes en curso: promedio parcial de 3 días hasta el 2026-11-04"
+  }
+ ]
+}

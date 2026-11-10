@@ -1,0 +1,145 @@
+{
+ "id": "redet_cemento",
+ "nombre": "Cemento portland en bolsa",
+ "unidad": "Índice oct-15=100",
+ "frecuencia": "mensual",
+ "naturaleza": "precio",
+ "fuente": "INDEC",
+ "fuenteUrl": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-5-112",
+ "actualizado": "2026-11-10T17:28:50.094Z",
+ "ultimoPeriodo": "2026-09",
+ "datos": [
+  {
+   "periodo": "2024-01",
+   "valor": 7359.3914
+  },
+  {
+   "periodo": "2024-02",
+   "valor": 8284.6638
+  },
+  {
+   "periodo": "2024-03",
+   "valor": 9237.7916
+  },
+  {
+   "periodo": "2024-04",
+   "valor": 9581.3625
+  },
+  {
+   "periodo": "2024-05",
+   "valor": 9717.4429
+  },
+  {
+   "periodo": "2024-06",
+   "valor": 9854.8955
+  },
+  {
+   "periodo": "2024-07",
+   "valor": 10009.5892
+  },
+  {
+   "periodo": "2024-08",
+   "valor": 10090.4108
+  },
+  {
+   "periodo": "2024-09",
+   "valor": 10179.5544
+  },
+  {
+   "periodo": "2024-10",
+   "valor": 10300.6134
+  },
+  {
+   "periodo": "2024-11",
+   "valor": 10554.8228
+  },
+  {
+   "periodo": "2024-12",
+   "valor": 10712.382
+  },
+  {
+   "periodo": "2025-01",
+   "valor": 10792.3642
+  },
+  {
+   "periodo": "2025-02",
+   "valor": 10977.6818
+  },
+  {
+   "periodo": "2025-03",
+   "valor": 10849.1807
+  },
+  {
+   "periodo": "2025-04",
+   "valor": 11303.382
+  },
+  {
+   "periodo": "2025-05",
+   "valor": 11357.6076
+  },
+  {
+   "periodo": "2025-06",
+   "valor": 11594.6404
+  },
+  {
+   "periodo": "2025-07",
+   "valor": 11709.9201
+  },
+  {
+   "periodo": "2025-08",
+   "valor": 12386.2459
+  },
+  {
+   "periodo": "2025-09",
+   "valor": 12770.4738
+  },
+  {
+   "periodo": "2025-10",
+   "valor": 13128.2832
+  },
+  {
+   "periodo": "2025-11",
+   "valor": 13371.6442
+  },
+  {
+   "periodo": "2025-12",
+   "valor": 13920.1792
+  },
+  {
+   "periodo": "2026-01",
+   "valor": 14367.1967
+  },
+  {
+   "periodo": "2026-02",
+   "valor": 14433.0293
+  },
+  {
+   "periodo": "2026-03",
+   "valor": 14787.7391
+  },
+  {
+   "periodo": "2026-04",
+   "valor": 15350.4964
+  },
+  {
+   "periodo": "2026-05",
+   "valor": 15706.0538
+  },
+  {
+   "periodo": "2026-06",
+   "valor": 16055.3556
+  },
+  {
+   "periodo": "2026-07",
+   "valor": 16319.2671
+  },
+  {
+   "periodo": "2026-08",
+   "valor": 16805.6179
+  },
+  {
+   "periodo": "2026-09",
+   "valor": 17111.5102
+  }
+ ]
+}

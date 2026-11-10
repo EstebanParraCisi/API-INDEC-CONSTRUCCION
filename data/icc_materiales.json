@@ -1,0 +1,151 @@
+{
+ "id": "icc_materiales",
+ "nombre": "ICC — Materiales",
+ "unidad": "Índice ene-22=100",
+ "frecuencia": "mensual",
+ "naturaleza": "precio",
+ "fuente": "INDEC",
+ "fuenteUrl": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-5-33",
+ "actualizado": "2026-11-10T17:28:42.474Z",
+ "ultimoPeriodo": "2026-09",
+ "datos": [
+  {
+   "periodo": "2024-01",
+   "valor": 845.0518
+  },
+  {
+   "periodo": "2024-02",
+   "valor": 898.355
+  },
+  {
+   "periodo": "2024-03",
+   "valor": 943.6357
+  },
+  {
+   "periodo": "2024-04",
+   "valor": 971.1659
+  },
+  {
+   "periodo": "2024-05",
+   "valor": 985.5223
+  },
+  {
+   "periodo": "2024-06",
+   "valor": 997.7098
+  },
+  {
+   "periodo": "2024-07",
+   "valor": 1023.1878
+  },
+  {
+   "periodo": "2024-08",
+   "valor": 1044.6464
+  },
+  {
+   "periodo": "2024-09",
+   "valor": 1062.8946
+  },
+  {
+   "periodo": "2024-10",
+   "valor": 1077.4854
+  },
+  {
+   "periodo": "2024-11",
+   "valor": 1090.2384
+  },
+  {
+   "periodo": "2024-12",
+   "valor": 1099.781
+  },
+  {
+   "periodo": "2025-01",
+   "valor": 1113.1575
+  },
+  {
+   "periodo": "2025-02",
+   "valor": 1134.275
+  },
+  {
+   "periodo": "2025-03",
+   "valor": 1141.5012
+  },
+  {
+   "periodo": "2025-04",
+   "valor": 1174.884
+  },
+  {
+   "periodo": "2025-05",
+   "valor": 1181.2496
+  },
+  {
+   "periodo": "2025-06",
+   "valor": 1193.0996
+  },
+  {
+   "periodo": "2025-07",
+   "valor": 1210.5135
+  },
+  {
+   "periodo": "2025-08",
+   "valor": 1233.5077
+  },
+  {
+   "periodo": "2025-09",
+   "valor": 1268.7291
+  },
+  {
+   "periodo": "2025-10",
+   "valor": 1294.7844
+  },
+  {
+   "periodo": "2025-11",
+   "valor": 1313.4905
+  },
+  {
+   "periodo": "2025-12",
+   "valor": 1334.3039
+  },
+  {
+   "periodo": "2026-01",
+   "valor": 1353.4199
+  },
+  {
+   "periodo": "2026-02",
+   "valor": 1373.3918
+  },
+  {
+   "periodo": "2026-03",
+   "valor": 1397.7967
+  },
+  {
+   "periodo": "2026-04",
+   "valor": 1439.0038,
+   "obs": "* Dato provisorio"
+  },
+  {
+   "periodo": "2026-05",
+   "valor": 1461.5129,
+   "obs": "* Dato provisorio"
+  },
+  {
+   "periodo": "2026-06",
+   "valor": 1488.008,
+   "obs": "* Dato provisorio"
+  },
+  {
+   "periodo": "2026-07",
+   "valor": 1511.5749,
+   "obs": "* Dato provisorio"
+  },
+  {
+   "periodo": "2026-08",
+   "valor": 1537.8917,
+   "obs": "* Dato provisorio"
+  },
+  {
+   "periodo": "2026-09",
+   "valor": 1558.2057,
+   "obs": "* Dato provisorio"
+  }
+ ]
+}

@@ -1,0 +1,12 @@
+{
+ "id": "escrituras_pba_hipotecas",
+ "nombre": "Hipotecas escrituradas en PBA",
+ "unidad": "Escrituras",
+ "frecuencia": "mensual",
+ "naturaleza": "cantidad",
+ "fuente": "Colegio de Escribanos de la Provincia de Buenos Aires",
+ "fuenteUrl": "https://www.colescba.org.ar/",
+ "actualizado": "2026-11-10T17:29:08.239Z",
+ "ultimoPeriodo": null,
+ "datos": []
+}

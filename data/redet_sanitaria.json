@@ -1,0 +1,145 @@
+{
+ "id": "redet_sanitaria",
+ "nombre": "Instalación sanitaria y grifería",
+ "unidad": "Índice oct-15=100",
+ "frecuencia": "mensual",
+ "naturaleza": "precio",
+ "fuente": "INDEC",
+ "fuenteUrl": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-5-112",
+ "actualizado": "2026-11-10T17:28:53.070Z",
+ "ultimoPeriodo": "2026-09",
+ "datos": [
+  {
+   "periodo": "2024-01",
+   "valor": 10048.2422
+  },
+  {
+   "periodo": "2024-02",
+   "valor": 10523.3653
+  },
+  {
+   "periodo": "2024-03",
+   "valor": 11103.8006
+  },
+  {
+   "periodo": "2024-04",
+   "valor": 11450.9027
+  },
+  {
+   "periodo": "2024-05",
+   "valor": 11465.5178
+  },
+  {
+   "periodo": "2024-06",
+   "valor": 11742.1957
+  },
+  {
+   "periodo": "2024-07",
+   "valor": 12086.335
+  },
+  {
+   "periodo": "2024-08",
+   "valor": 12316.6192
+  },
+  {
+   "periodo": "2024-09",
+   "valor": 12519.2364
+  },
+  {
+   "periodo": "2024-10",
+   "valor": 12842.7226
+  },
+  {
+   "periodo": "2024-11",
+   "valor": 12882.8107
+  },
+  {
+   "periodo": "2024-12",
+   "valor": 13064.9477
+  },
+  {
+   "periodo": "2025-01",
+   "valor": 13152.6561
+  },
+  {
+   "periodo": "2025-02",
+   "valor": 13470.2514
+  },
+  {
+   "periodo": "2025-03",
+   "valor": 13612.6371
+  },
+  {
+   "periodo": "2025-04",
+   "valor": 13798.8166
+  },
+  {
+   "periodo": "2025-05",
+   "valor": 13989.9542
+  },
+  {
+   "periodo": "2025-06",
+   "valor": 14124.5228
+  },
+  {
+   "periodo": "2025-07",
+   "valor": 14293.4525
+  },
+  {
+   "periodo": "2025-08",
+   "valor": 14373.4905
+  },
+  {
+   "periodo": "2025-09",
+   "valor": 14718.2949
+  },
+  {
+   "periodo": "2025-10",
+   "valor": 14945.4349
+  },
+  {
+   "periodo": "2025-11",
+   "valor": 15062.5983
+  },
+  {
+   "periodo": "2025-12",
+   "valor": 15258.1152
+  },
+  {
+   "periodo": "2026-01",
+   "valor": 15475.149
+  },
+  {
+   "periodo": "2026-02",
+   "valor": 15677.9045
+  },
+  {
+   "periodo": "2026-03",
+   "valor": 15942.9127
+  },
+  {
+   "periodo": "2026-04",
+   "valor": 16561.8381
+  },
+  {
+   "periodo": "2026-05",
+   "valor": 16746.7219
+  },
+  {
+   "periodo": "2026-06",
+   "valor": 17153.5717
+  },
+  {
+   "periodo": "2026-07",
+   "valor": 17487.1124
+  },
+  {
+   "periodo": "2026-08",
+   "valor": 17776.7211
+  },
+  {
+   "periodo": "2026-09",
+   "valor": 18072.2381
+  }
+ ]
+}

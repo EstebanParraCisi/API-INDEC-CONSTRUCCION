@@ -1,0 +1,146 @@
+{
+ "id": "sipm_plasticos",
+ "nombre": "Productos de plástico",
+ "unidad": "Índice dic-15=100",
+ "frecuencia": "mensual",
+ "naturaleza": "precio",
+ "fuente": "INDEC",
+ "fuenteUrl": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-5-32",
+ "actualizado": "2026-11-10T17:28:49.142Z",
+ "ultimoPeriodo": "2026-09",
+ "datos": [
+  {
+   "periodo": "2024-01",
+   "valor": 8855.8133
+  },
+  {
+   "periodo": "2024-02",
+   "valor": 9096.5453
+  },
+  {
+   "periodo": "2024-03",
+   "valor": 9426.8651
+  },
+  {
+   "periodo": "2024-04",
+   "valor": 9542.892
+  },
+  {
+   "periodo": "2024-05",
+   "valor": 9581.9606
+  },
+  {
+   "periodo": "2024-06",
+   "valor": 9516.8302
+  },
+  {
+   "periodo": "2024-07",
+   "valor": 9489.7294
+  },
+  {
+   "periodo": "2024-08",
+   "valor": 9501.3779
+  },
+  {
+   "periodo": "2024-09",
+   "valor": 9583.1709
+  },
+  {
+   "periodo": "2024-10",
+   "valor": 9707.549
+  },
+  {
+   "periodo": "2024-11",
+   "valor": 9775.9346
+  },
+  {
+   "periodo": "2024-12",
+   "valor": 9633.7454
+  },
+  {
+   "periodo": "2025-01",
+   "valor": 9692.0747
+  },
+  {
+   "periodo": "2025-02",
+   "valor": 9774.1352
+  },
+  {
+   "periodo": "2025-03",
+   "valor": 9811.6055
+  },
+  {
+   "periodo": "2025-04",
+   "valor": 10335.1987
+  },
+  {
+   "periodo": "2025-05",
+   "valor": 10337.6407
+  },
+  {
+   "periodo": "2025-06",
+   "valor": 10489.7584
+  },
+  {
+   "periodo": "2025-07",
+   "valor": 10884.5735
+  },
+  {
+   "periodo": "2025-08",
+   "valor": 11267.6875
+  },
+  {
+   "periodo": "2025-09",
+   "valor": 11841.062
+  },
+  {
+   "periodo": "2025-10",
+   "valor": 11884.4208
+  },
+  {
+   "periodo": "2025-11",
+   "valor": 12064.4185
+  },
+  {
+   "periodo": "2025-12",
+   "valor": 12186.2941
+  },
+  {
+   "periodo": "2026-01",
+   "valor": 12305.674
+  },
+  {
+   "periodo": "2026-02",
+   "valor": 12175.3974
+  },
+  {
+   "periodo": "2026-03",
+   "valor": 12590.0588
+  },
+  {
+   "periodo": "2026-04",
+   "valor": 13850.686
+  },
+  {
+   "periodo": "2026-05",
+   "valor": 14359.5596
+  },
+  {
+   "periodo": "2026-06",
+   "valor": 14668.0141
+  },
+  {
+   "periodo": "2026-07",
+   "valor": 14690.9117
+  },
+  {
+   "periodo": "2026-08",
+   "valor": 14705.7237
+  },
+  {
+   "periodo": "2026-09",
+   "valor": 14858.88,
+   "obs": "* Dato provisorio"
+  }
+ ]
+}

@@ -1,0 +1,145 @@
+{
+ "id": "redet_hierro",
+ "nombre": "Hierro aletado (acero en barra)",
+ "unidad": "Índice oct-15=100",
+ "frecuencia": "mensual",
+ "naturaleza": "precio",
+ "fuente": "INDEC",
+ "fuenteUrl": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-5-112",
+ "actualizado": "2026-11-10T17:28:51.000Z",
+ "ultimoPeriodo": "2026-09",
+ "datos": [
+  {
+   "periodo": "2024-01",
+   "valor": 14581.6498
+  },
+  {
+   "periodo": "2024-02",
+   "valor": 14955.6244
+  },
+  {
+   "periodo": "2024-03",
+   "valor": 15014.255
+  },
+  {
+   "periodo": "2024-04",
+   "valor": 15158.8067
+  },
+  {
+   "periodo": "2024-05",
+   "valor": 15000.3913
+  },
+  {
+   "periodo": "2024-06",
+   "valor": 15107.1797
+  },
+  {
+   "periodo": "2024-07",
+   "valor": 15231.8618
+  },
+  {
+   "periodo": "2024-08",
+   "valor": 15395.9439
+  },
+  {
+   "periodo": "2024-09",
+   "valor": 15309.9054
+  },
+  {
+   "periodo": "2024-10",
+   "valor": 15501.4933
+  },
+  {
+   "periodo": "2024-11",
+   "valor": 15521.6303
+  },
+  {
+   "periodo": "2024-12",
+   "valor": 15637.9002
+  },
+  {
+   "periodo": "2025-01",
+   "valor": 15392.553
+  },
+  {
+   "periodo": "2025-02",
+   "valor": 15562.9932
+  },
+  {
+   "periodo": "2025-03",
+   "valor": 15480.7499
+  },
+  {
+   "periodo": "2025-04",
+   "valor": 16306.7493
+  },
+  {
+   "periodo": "2025-05",
+   "valor": 16074.8614
+  },
+  {
+   "periodo": "2025-06",
+   "valor": 16142.8432
+  },
+  {
+   "periodo": "2025-07",
+   "valor": 16372.6378
+  },
+  {
+   "periodo": "2025-08",
+   "valor": 16218.5197
+  },
+  {
+   "periodo": "2025-09",
+   "valor": 16697.7437
+  },
+  {
+   "periodo": "2025-10",
+   "valor": 16736.1526
+  },
+  {
+   "periodo": "2025-11",
+   "valor": 16833.5833
+  },
+  {
+   "periodo": "2025-12",
+   "valor": 17304.9495
+  },
+  {
+   "periodo": "2026-01",
+   "valor": 17455.6244
+  },
+  {
+   "periodo": "2026-02",
+   "valor": 17354.3854
+  },
+  {
+   "periodo": "2026-03",
+   "valor": 16899.5305
+  },
+  {
+   "periodo": "2026-04",
+   "valor": 16838.7154
+  },
+  {
+   "periodo": "2026-05",
+   "valor": 16824.7408
+  },
+  {
+   "periodo": "2026-06",
+   "valor": 17080.7956
+  },
+  {
+   "periodo": "2026-07",
+   "valor": 17112.253
+  },
+  {
+   "periodo": "2026-08",
+   "valor": 17115.7222
+  },
+  {
+   "periodo": "2026-09",
+   "valor": 17173.5703
+  }
+ ]
+}

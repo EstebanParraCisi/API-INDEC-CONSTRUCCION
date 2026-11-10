@@ -1,0 +1,146 @@
+{
+ "id": "sipm_maderas",
+ "nombre": "Maderas aserradas",
+ "unidad": "Índice dic-15=100",
+ "frecuencia": "mensual",
+ "naturaleza": "precio",
+ "fuente": "INDEC",
+ "fuenteUrl": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-5-32",
+ "actualizado": "2026-11-10T17:28:49.549Z",
+ "ultimoPeriodo": "2026-09",
+ "datos": [
+  {
+   "periodo": "2024-01",
+   "valor": 5171.7991
+  },
+  {
+   "periodo": "2024-02",
+   "valor": 5580.1433
+  },
+  {
+   "periodo": "2024-03",
+   "valor": 6183.0105
+  },
+  {
+   "periodo": "2024-04",
+   "valor": 6322.0973
+  },
+  {
+   "periodo": "2024-05",
+   "valor": 6697.5055
+  },
+  {
+   "periodo": "2024-06",
+   "valor": 7108.7538
+  },
+  {
+   "periodo": "2024-07",
+   "valor": 7274.2885
+  },
+  {
+   "periodo": "2024-08",
+   "valor": 7534.1654
+  },
+  {
+   "periodo": "2024-09",
+   "valor": 7892.1648
+  },
+  {
+   "periodo": "2024-10",
+   "valor": 7676.8281
+  },
+  {
+   "periodo": "2024-11",
+   "valor": 7686.9257
+  },
+  {
+   "periodo": "2024-12",
+   "valor": 7820.529
+  },
+  {
+   "periodo": "2025-01",
+   "valor": 7926.5495
+  },
+  {
+   "periodo": "2025-02",
+   "valor": 8104.0784
+  },
+  {
+   "periodo": "2025-03",
+   "valor": 8157.9383
+  },
+  {
+   "periodo": "2025-04",
+   "valor": 8247.3761
+  },
+  {
+   "periodo": "2025-05",
+   "valor": 8386.14
+  },
+  {
+   "periodo": "2025-06",
+   "valor": 8479.5635
+  },
+  {
+   "periodo": "2025-07",
+   "valor": 8649.3963
+  },
+  {
+   "periodo": "2025-08",
+   "valor": 8711.9264
+  },
+  {
+   "periodo": "2025-09",
+   "valor": 8960.3551
+  },
+  {
+   "periodo": "2025-10",
+   "valor": 9135.4199
+  },
+  {
+   "periodo": "2025-11",
+   "valor": 9259.6058
+  },
+  {
+   "periodo": "2025-12",
+   "valor": 9313.5565
+  },
+  {
+   "periodo": "2026-01",
+   "valor": 9393.6213
+  },
+  {
+   "periodo": "2026-02",
+   "valor": 9482.1007
+  },
+  {
+   "periodo": "2026-03",
+   "valor": 9562.358
+  },
+  {
+   "periodo": "2026-04",
+   "valor": 9853.7926
+  },
+  {
+   "periodo": "2026-05",
+   "valor": 10066.4385
+  },
+  {
+   "periodo": "2026-06",
+   "valor": 9956.7267
+  },
+  {
+   "periodo": "2026-07",
+   "valor": 10105.7143
+  },
+  {
+   "periodo": "2026-08",
+   "valor": 10355.863
+  },
+  {
+   "periodo": "2026-09",
+   "valor": 10498.7233,
+   "obs": "* Dato provisorio"
+  }
+ ]
+}

@@ -1,0 +1,69 @@
+{
+ "id": "poblacion_06525",
+ "nombre": "Población de Marcos Paz",
+ "unidad": "Habitantes (al 1° de julio)",
+ "frecuencia": "anual",
+ "naturaleza": "nivel",
+ "fuente": "INDEC (estimaciones de población por departamento 2022–2035)",
+ "fuenteUrl": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-2-24-119",
+ "actualizado": "2026-11-10T17:28:55.436Z",
+ "ultimoPeriodo": "2035",
+ "datos": [
+  {
+   "periodo": "2022",
+   "valor": 66706
+  },
+  {
+   "periodo": "2023",
+   "valor": 66775
+  },
+  {
+   "periodo": "2024",
+   "valor": 66871
+  },
+  {
+   "periodo": "2025",
+   "valor": 66961
+  },
+  {
+   "periodo": "2026",
+   "valor": 67033
+  },
+  {
+   "periodo": "2027",
+   "valor": 67090
+  },
+  {
+   "periodo": "2028",
+   "valor": 67137
+  },
+  {
+   "periodo": "2029",
+   "valor": 67181
+  },
+  {
+   "periodo": "2030",
+   "valor": 67231
+  },
+  {
+   "periodo": "2031",
+   "valor": 67296
+  },
+  {
+   "periodo": "2032",
+   "valor": 67373
+  },
+  {
+   "periodo": "2033",
+   "valor": 67465
+  },
+  {
+   "periodo": "2034",
+   "valor": 67568
+  },
+  {
+   "periodo": "2035",
+   "valor": 67684
+  }
+ ]
+}

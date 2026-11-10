@@ -1,0 +1,145 @@
+{
+ "id": "ipc_nacional",
+ "nombre": "Inflación (IPC Nacional)",
+ "unidad": "Índice dic-16=100",
+ "frecuencia": "mensual",
+ "naturaleza": "precio",
+ "fuente": "INDEC",
+ "fuenteUrl": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-5-31",
+ "actualizado": "2026-11-10T17:28:54.518Z",
+ "ultimoPeriodo": "2026-09",
+ "datos": [
+  {
+   "periodo": "2024-01",
+   "valor": 4261.5324
+  },
+  {
+   "periodo": "2024-02",
+   "valor": 4825.7881
+  },
+  {
+   "periodo": "2024-03",
+   "valor": 5357.0929
+  },
+  {
+   "periodo": "2024-04",
+   "valor": 5830.2271
+  },
+  {
+   "periodo": "2024-05",
+   "valor": 6073.7165
+  },
+  {
+   "periodo": "2024-06",
+   "valor": 6351.7145
+  },
+  {
+   "periodo": "2024-07",
+   "valor": 6607.7479
+  },
+  {
+   "periodo": "2024-08",
+   "valor": 6883.4412
+  },
+  {
+   "periodo": "2024-09",
+   "valor": 7122.2421
+  },
+  {
+   "periodo": "2024-10",
+   "valor": 7313.9542
+  },
+  {
+   "periodo": "2024-11",
+   "valor": 7491.4314
+  },
+  {
+   "periodo": "2024-12",
+   "valor": 7694.0075
+  },
+  {
+   "periodo": "2025-01",
+   "valor": 7864.1257
+  },
+  {
+   "periodo": "2025-02",
+   "valor": 8052.9927
+  },
+  {
+   "periodo": "2025-03",
+   "valor": 8353.3158
+  },
+  {
+   "periodo": "2025-04",
+   "valor": 8585.6078
+  },
+  {
+   "periodo": "2025-05",
+   "valor": 8714.4871
+  },
+  {
+   "periodo": "2025-06",
+   "valor": 8855.5681
+  },
+  {
+   "periodo": "2025-07",
+   "valor": 9023.973
+  },
+  {
+   "periodo": "2025-08",
+   "valor": 9193.2441
+  },
+  {
+   "periodo": "2025-09",
+   "valor": 9384.0922
+  },
+  {
+   "periodo": "2025-10",
+   "valor": 9603.8623
+  },
+  {
+   "periodo": "2025-11",
+   "valor": 9841.3581
+  },
+  {
+   "periodo": "2025-12",
+   "valor": 10121.3715
+  },
+  {
+   "periodo": "2026-01",
+   "valor": 10413.0309
+  },
+  {
+   "periodo": "2026-02",
+   "valor": 10714.6255
+  },
+  {
+   "periodo": "2026-03",
+   "valor": 11077.0608
+  },
+  {
+   "periodo": "2026-04",
+   "valor": 11363.0904
+  },
+  {
+   "periodo": "2026-05",
+   "valor": 11607.3937
+  },
+  {
+   "periodo": "2026-06",
+   "valor": 11826.4103
+  },
+  {
+   "periodo": "2026-07",
+   "valor": 12076.3937
+  },
+  {
+   "periodo": "2026-08",
+   "valor": 12276.766
+  },
+  {
+   "periodo": "2026-09",
+   "valor": 12514.1508
+  }
+ ]
+}

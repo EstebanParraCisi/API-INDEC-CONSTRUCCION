@@ -1,0 +1,142 @@
+{
+ "id": "insumo_asfalto",
+ "nombre": "Asfalto",
+ "unidad": "Índice 2004=100",
+ "frecuencia": "mensual",
+ "naturaleza": "volumen",
+ "fuente": "INDEC (ISAC) vía Series de Tiempo",
+ "fuenteUrl": "https://datos.gob.ar/series/?ids=33.4_ISAC_ASFALLTO_0_0_12_6",
+ "actualizado": "2026-11-10T17:28:39.852Z",
+ "ultimoPeriodo": "2026-08",
+ "nota": "INDEC no publica la serie original de este insumo; se usa la serie desestacionalizada. La variación interanual compara mes contra mismo mes y es muy parecida, aunque no idéntica, a la de la serie original.",
+ "datos": [
+  {
+   "periodo": "2024-01",
+   "valor": 45.580844160024
+  },
+  {
+   "periodo": "2024-02",
+   "valor": 40.6638914170681
+  },
+  {
+   "periodo": "2024-03",
+   "valor": 45.4664474953036
+  },
+  {
+   "periodo": "2024-04",
+   "valor": 48.8367933417732
+  },
+  {
+   "periodo": "2024-05",
+   "valor": 58.0401928399882
+  },
+  {
+   "periodo": "2024-06",
+   "valor": 60.3922386769281
+  },
+  {
+   "periodo": "2024-07",
+   "valor": 71.9456666651311
+  },
+  {
+   "periodo": "2024-08",
+   "valor": 57.8973140188167
+  },
+  {
+   "periodo": "2024-09",
+   "valor": 74.4797885802707
+  },
+  {
+   "periodo": "2024-10",
+   "valor": 71.3704530001757
+  },
+  {
+   "periodo": "2024-11",
+   "valor": 70.4477671005461
+  },
+  {
+   "periodo": "2024-12",
+   "valor": 82.373431914914
+  },
+  {
+   "periodo": "2025-01",
+   "valor": 88.2675621859789
+  },
+  {
+   "periodo": "2025-02",
+   "valor": 73.9907974525431
+  },
+  {
+   "periodo": "2025-03",
+   "valor": 74.7523564526145
+  },
+  {
+   "periodo": "2025-04",
+   "valor": 84.8012128744771
+  },
+  {
+   "periodo": "2025-05",
+   "valor": 83.6408907237746
+  },
+  {
+   "periodo": "2025-06",
+   "valor": 89.997646234291
+  },
+  {
+   "periodo": "2025-07",
+   "valor": 93.5965711397407
+  },
+  {
+   "periodo": "2025-08",
+   "valor": 95.5740124196599
+  },
+  {
+   "periodo": "2025-09",
+   "valor": 93.0320310135769
+  },
+  {
+   "periodo": "2025-10",
+   "valor": 94.417728627232
+  },
+  {
+   "periodo": "2025-11",
+   "valor": 86.1883892976674
+  },
+  {
+   "periodo": "2025-12",
+   "valor": 79.8791058272444
+  },
+  {
+   "periodo": "2026-01",
+   "valor": 87.0571059831954
+  },
+  {
+   "periodo": "2026-02",
+   "valor": 80.0995617363558
+  },
+  {
+   "periodo": "2026-03",
+   "valor": 81.5662343611669
+  },
+  {
+   "periodo": "2026-04",
+   "valor": 71.0975311272777
+  },
+  {
+   "periodo": "2026-05",
+   "valor": 79.0442444677368
+  },
+  {
+   "periodo": "2026-06",
+   "valor": 73.4542507504187
+  },
+  {
+   "periodo": "2026-07",
+   "valor": 70.970901192159
+  },
+  {
+   "periodo": "2026-08",
+   "valor": 76.830965643707
+  }
+ ]
+}

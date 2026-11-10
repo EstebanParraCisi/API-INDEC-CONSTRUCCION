@@ -1,0 +1,146 @@
+{
+ "id": "sipm_metalicos_estructurales",
+ "nombre": "Productos metálicos para uso estructural",
+ "unidad": "Índice dic-15=100",
+ "frecuencia": "mensual",
+ "naturaleza": "precio",
+ "fuente": "INDEC",
+ "fuenteUrl": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-5-32",
+ "actualizado": "2026-11-10T17:28:47.500Z",
+ "ultimoPeriodo": "2026-09",
+ "datos": [
+  {
+   "periodo": "2024-01",
+   "valor": 8416.369
+  },
+  {
+   "periodo": "2024-02",
+   "valor": 8793.7386
+  },
+  {
+   "periodo": "2024-03",
+   "valor": 8939.0634
+  },
+  {
+   "periodo": "2024-04",
+   "valor": 9002.0574
+  },
+  {
+   "periodo": "2024-05",
+   "valor": 9318.6214
+  },
+  {
+   "periodo": "2024-06",
+   "valor": 9439.6711
+  },
+  {
+   "periodo": "2024-07",
+   "valor": 9779.4388
+  },
+  {
+   "periodo": "2024-08",
+   "valor": 9780.9901
+  },
+  {
+   "periodo": "2024-09",
+   "valor": 10637.3989
+  },
+  {
+   "periodo": "2024-10",
+   "valor": 10865.3606
+  },
+  {
+   "periodo": "2024-11",
+   "valor": 10279.7102
+  },
+  {
+   "periodo": "2024-12",
+   "valor": 10906.9603
+  },
+  {
+   "periodo": "2025-01",
+   "valor": 10962.8875
+  },
+  {
+   "periodo": "2025-02",
+   "valor": 11171.5897
+  },
+  {
+   "periodo": "2025-03",
+   "valor": 11200.5932
+  },
+  {
+   "periodo": "2025-04",
+   "valor": 11603.9812
+  },
+  {
+   "periodo": "2025-05",
+   "valor": 11616.1479
+  },
+  {
+   "periodo": "2025-06",
+   "valor": 11649.3309
+  },
+  {
+   "periodo": "2025-07",
+   "valor": 11849.4149
+  },
+  {
+   "periodo": "2025-08",
+   "valor": 12186.6891
+  },
+  {
+   "periodo": "2025-09",
+   "valor": 12299.3595
+  },
+  {
+   "periodo": "2025-10",
+   "valor": 12637.7626
+  },
+  {
+   "periodo": "2025-11",
+   "valor": 13010.5464
+  },
+  {
+   "periodo": "2025-12",
+   "valor": 12890.6036
+  },
+  {
+   "periodo": "2026-01",
+   "valor": 13140.639
+  },
+  {
+   "periodo": "2026-02",
+   "valor": 13367.372
+  },
+  {
+   "periodo": "2026-03",
+   "valor": 13513.7273
+  },
+  {
+   "periodo": "2026-04",
+   "valor": 13733.1254
+  },
+  {
+   "periodo": "2026-05",
+   "valor": 14137.1054
+  },
+  {
+   "periodo": "2026-06",
+   "valor": 14297.8645
+  },
+  {
+   "periodo": "2026-07",
+   "valor": 14578.8445
+  },
+  {
+   "periodo": "2026-08",
+   "valor": 14682.7643
+  },
+  {
+   "periodo": "2026-09",
+   "valor": 15101.1485,
+   "obs": "* Dato provisorio"
+  }
+ ]
+}

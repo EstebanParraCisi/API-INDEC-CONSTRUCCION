@@ -1,0 +1,12 @@
+{
+ "id": "despachos_cemento",
+ "nombre": "Despachos de cemento",
+ "unidad": "Toneladas",
+ "frecuencia": "mensual",
+ "naturaleza": "cantidad",
+ "fuente": "AFCP (Asociación de Fabricantes de Cemento Portland)",
+ "fuenteUrl": "https://www.afcp.org.ar/",
+ "actualizado": "2026-11-10T17:29:08.239Z",
+ "ultimoPeriodo": null,
+ "datos": []
+}

@@ -1,0 +1,145 @@
+{
+ "id": "redet_albanileria",
+ "nombre": "Albañilería (ítem de obra)",
+ "unidad": "Índice oct-15=100",
+ "frecuencia": "mensual",
+ "naturaleza": "precio",
+ "fuente": "INDEC",
+ "fuenteUrl": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-5-112",
+ "actualizado": "2026-11-10T17:28:53.434Z",
+ "ultimoPeriodo": "2026-09",
+ "datos": [
+  {
+   "periodo": "2024-01",
+   "valor": 4673.1963
+  },
+  {
+   "periodo": "2024-02",
+   "valor": 4851.1695
+  },
+  {
+   "periodo": "2024-03",
+   "valor": 5392.1619
+  },
+  {
+   "periodo": "2024-04",
+   "valor": 5700.1234
+  },
+  {
+   "periodo": "2024-05",
+   "valor": 6762.8464
+  },
+  {
+   "periodo": "2024-06",
+   "valor": 6991.9151
+  },
+  {
+   "periodo": "2024-07",
+   "valor": 7053.7863
+  },
+  {
+   "periodo": "2024-08",
+   "valor": 7119.2619
+  },
+  {
+   "periodo": "2024-09",
+   "valor": 7573.1223
+  },
+  {
+   "periodo": "2024-10",
+   "valor": 7608.2948
+  },
+  {
+   "periodo": "2024-11",
+   "valor": 7654.7429
+  },
+  {
+   "periodo": "2024-12",
+   "valor": 8780.6517
+  },
+  {
+   "periodo": "2025-01",
+   "valor": 8834.2838
+  },
+  {
+   "periodo": "2025-02",
+   "valor": 9095.0133
+  },
+  {
+   "periodo": "2025-03",
+   "valor": 9093.2111
+  },
+  {
+   "periodo": "2025-04",
+   "valor": 9013.3864
+  },
+  {
+   "periodo": "2025-05",
+   "valor": 9525.3533
+  },
+  {
+   "periodo": "2025-06",
+   "valor": 9586.268
+  },
+  {
+   "periodo": "2025-07",
+   "valor": 9796.5624
+  },
+  {
+   "periodo": "2025-08",
+   "valor": 9974.5973
+  },
+  {
+   "periodo": "2025-09",
+   "valor": 10287.4406
+  },
+  {
+   "periodo": "2025-10",
+   "valor": 10420.632
+  },
+  {
+   "periodo": "2025-11",
+   "valor": 10820.1321
+  },
+  {
+   "periodo": "2025-12",
+   "valor": 10976.3624
+  },
+  {
+   "periodo": "2026-01",
+   "valor": 11318.9101
+  },
+  {
+   "periodo": "2026-02",
+   "valor": 11542.5724
+  },
+  {
+   "periodo": "2026-03",
+   "valor": 11819.6075
+  },
+  {
+   "periodo": "2026-04",
+   "valor": 12318.8422
+  },
+  {
+   "periodo": "2026-05",
+   "valor": 12735.7465
+  },
+  {
+   "periodo": "2026-06",
+   "valor": 13051.9719
+  },
+  {
+   "periodo": "2026-07",
+   "valor": 13342.0539
+  },
+  {
+   "periodo": "2026-08",
+   "valor": 13706.4988
+  },
+  {
+   "periodo": "2026-09",
+   "valor": 13920.1938
+  }
+ ]
+}

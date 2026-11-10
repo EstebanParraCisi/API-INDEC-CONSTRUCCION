@@ -1,0 +1,154 @@
+{
+ "id": "hipotecarios_stock",
+ "nombre": "Préstamos hipotecarios al sector privado (stock a fin de mes)",
+ "unidad": "Millones de $",
+ "frecuencia": "mensual",
+ "naturaleza": "nivel",
+ "fuente": "BCRA",
+ "fuenteUrl": "https://www.bcra.gob.ar/PublicacionesEstadisticas/Principales_variables.asp",
+ "actualizado": "2026-11-10T17:28:57.516Z",
+ "ultimoPeriodo": "2026-11",
+ "datos": [
+  {
+   "periodo": "2024-01",
+   "valor": 595302
+  },
+  {
+   "periodo": "2024-02",
+   "valor": 599230
+  },
+  {
+   "periodo": "2024-03",
+   "valor": 590419
+  },
+  {
+   "periodo": "2024-04",
+   "valor": 590060
+  },
+  {
+   "periodo": "2024-05",
+   "valor": 590213
+  },
+  {
+   "periodo": "2024-06",
+   "valor": 623700
+  },
+  {
+   "periodo": "2024-07",
+   "valor": 680971
+  },
+  {
+   "periodo": "2024-08",
+   "valor": 786652
+  },
+  {
+   "periodo": "2024-09",
+   "valor": 957072
+  },
+  {
+   "periodo": "2024-10",
+   "valor": 1224656
+  },
+  {
+   "periodo": "2024-11",
+   "valor": 1484453
+  },
+  {
+   "periodo": "2024-12",
+   "valor": 1813647
+  },
+  {
+   "periodo": "2025-01",
+   "valor": 2040649
+  },
+  {
+   "periodo": "2025-02",
+   "valor": 2301020
+  },
+  {
+   "periodo": "2025-03",
+   "valor": 2600586
+  },
+  {
+   "periodo": "2025-04",
+   "valor": 2986624
+  },
+  {
+   "periodo": "2025-05",
+   "valor": 3386498
+  },
+  {
+   "periodo": "2025-06",
+   "valor": 3829229
+  },
+  {
+   "periodo": "2025-07",
+   "valor": 4300518
+  },
+  {
+   "periodo": "2025-08",
+   "valor": 4746549
+  },
+  {
+   "periodo": "2025-09",
+   "valor": 5270691
+  },
+  {
+   "periodo": "2025-10",
+   "valor": 5846914
+  },
+  {
+   "periodo": "2025-11",
+   "valor": 6130878
+  },
+  {
+   "periodo": "2025-12",
+   "valor": 6489588
+  },
+  {
+   "periodo": "2026-01",
+   "valor": 6794617
+  },
+  {
+   "periodo": "2026-02",
+   "valor": 7009287
+  },
+  {
+   "periodo": "2026-03",
+   "valor": 7280094
+  },
+  {
+   "periodo": "2026-04",
+   "valor": 7448752
+  },
+  {
+   "periodo": "2026-05",
+   "valor": 7634736
+  },
+  {
+   "periodo": "2026-06",
+   "valor": 7926254
+  },
+  {
+   "periodo": "2026-07",
+   "valor": 8251569
+  },
+  {
+   "periodo": "2026-08",
+   "valor": 8631439
+  },
+  {
+   "periodo": "2026-09",
+   "valor": 9111808
+  },
+  {
+   "periodo": "2026-10",
+   "valor": 9591003
+  },
+  {
+   "periodo": "2026-11",
+   "valor": 9637635,
+   "obs": "Mes en curso: dato al 2026-11-03"
+  }
+ ]
+}

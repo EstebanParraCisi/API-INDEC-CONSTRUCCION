@@ -1,0 +1,151 @@
+{
+ "id": "icc_general",
+ "nombre": "Costo de la construcción (ICC GBA) — nivel general",
+ "unidad": "Índice ene-22=100",
+ "frecuencia": "mensual",
+ "naturaleza": "precio",
+ "fuente": "INDEC",
+ "fuenteUrl": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-5-33",
+ "actualizado": "2026-11-10T17:28:41.257Z",
+ "ultimoPeriodo": "2026-09",
+ "datos": [
+  {
+   "periodo": "2024-01",
+   "valor": 702.6022
+  },
+  {
+   "periodo": "2024-02",
+   "valor": 747.9377
+  },
+  {
+   "periodo": "2024-03",
+   "valor": 808.7615
+  },
+  {
+   "periodo": "2024-04",
+   "valor": 847.3702
+  },
+  {
+   "periodo": "2024-05",
+   "valor": 939.0902
+  },
+  {
+   "periodo": "2024-06",
+   "valor": 968.8712
+  },
+  {
+   "periodo": "2024-07",
+   "valor": 986.731
+  },
+  {
+   "periodo": "2024-08",
+   "valor": 1003.148
+  },
+  {
+   "periodo": "2024-09",
+   "valor": 1050.4449
+  },
+  {
+   "periodo": "2024-10",
+   "valor": 1062.7327
+  },
+  {
+   "periodo": "2024-11",
+   "valor": 1073.0755
+  },
+  {
+   "periodo": "2024-12",
+   "valor": 1165.888
+  },
+  {
+   "periodo": "2025-01",
+   "valor": 1176.1076
+  },
+  {
+   "periodo": "2025-02",
+   "valor": 1201.9134
+  },
+  {
+   "periodo": "2025-03",
+   "valor": 1208.6529
+  },
+  {
+   "periodo": "2025-04",
+   "valor": 1214.6701
+  },
+  {
+   "periodo": "2025-05",
+   "valor": 1256.8296
+  },
+  {
+   "periodo": "2025-06",
+   "valor": 1269.3609
+  },
+  {
+   "periodo": "2025-07",
+   "valor": 1292.9292
+  },
+  {
+   "periodo": "2025-08",
+   "valor": 1315.4929
+  },
+  {
+   "periodo": "2025-09",
+   "valor": 1355.2112
+  },
+  {
+   "periodo": "2025-10",
+   "valor": 1377.8627
+  },
+  {
+   "periodo": "2025-11",
+   "valor": 1415.5789
+  },
+  {
+   "periodo": "2025-12",
+   "valor": 1436.4988
+  },
+  {
+   "periodo": "2026-01",
+   "valor": 1472.1287
+  },
+  {
+   "periodo": "2026-02",
+   "valor": 1501.6455
+  },
+  {
+   "periodo": "2026-03",
+   "valor": 1530.8274
+  },
+  {
+   "periodo": "2026-04",
+   "valor": 1590.9181,
+   "obs": "* Dato provisorio"
+  },
+  {
+   "periodo": "2026-05",
+   "valor": 1634.9076,
+   "obs": "* Dato provisorio"
+  },
+  {
+   "periodo": "2026-06",
+   "valor": 1675.3528,
+   "obs": "* Dato provisorio"
+  },
+  {
+   "periodo": "2026-07",
+   "valor": 1710.0305,
+   "obs": "* Dato provisorio"
+  },
+  {
+   "periodo": "2026-08",
+   "valor": 1753.3865,
+   "obs": "* Dato provisorio"
+  },
+  {
+   "periodo": "2026-09",
+   "valor": 1779.7227,
+   "obs": "* Dato provisorio"
+  }
+ ]
+}

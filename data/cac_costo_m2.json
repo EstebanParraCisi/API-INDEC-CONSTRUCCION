@@ -1,0 +1,12 @@
+{
+ "id": "cac_costo_m2",
+ "nombre": "Costo de construcción por m² (CAC)",
+ "unidad": "$ por m²",
+ "frecuencia": "mensual",
+ "naturaleza": "precio",
+ "fuente": "Cámara Argentina de la Construcción",
+ "fuenteUrl": "https://www.camarco.org.ar/",
+ "actualizado": "2026-11-10T17:29:08.239Z",
+ "ultimoPeriodo": null,
+ "datos": []
+}

@@ -1,0 +1,12 @@
+{
+ "id": "construya_indice",
+ "nombre": "Índice Construya",
+ "unidad": "Índice",
+ "frecuencia": "mensual",
+ "naturaleza": "volumen",
+ "fuente": "Grupo Construya",
+ "fuenteUrl": "https://www.grupoconstruya.com.ar/",
+ "actualizado": "2026-11-10T17:29:08.239Z",
+ "ultimoPeriodo": null,
+ "datos": []
+}
