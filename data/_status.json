@@ -1,10 +1,10 @@
 {
-  "generado": "2026-11-10T17:29:08.238Z",
+  "generado": "2026-11-10T17:44:12.905Z",
   "fuentes": {
     "seriesTiempo": {
       "ok": true,
-      "ultimaCorrida": "2026-11-10T17:28:32.258Z",
-      "ultimaCorridaOk": "2026-11-10T17:28:32.258Z",
+      "ultimaCorrida": "2026-11-10T17:44:12.905Z",
+      "ultimaCorridaOk": "2026-11-10T17:44:12.905Z",
       "series": [
         "isac_general",
         "isac_desest",
@@ -25,8 +25,8 @@
     },
     "indec": {
       "ok": true,
-      "ultimaCorrida": "2026-11-10T17:28:32.258Z",
-      "ultimaCorridaOk": "2026-11-10T17:28:32.258Z",
+      "ultimaCorrida": "2026-11-10T17:44:12.905Z",
+      "ultimaCorridaOk": "2026-11-10T17:44:12.905Z",
       "series": [
         "icc_general",
         "icc_materiales",
@@ -68,8 +68,8 @@
     },
     "bcra": {
       "ok": true,
-      "ultimaCorrida": "2026-11-10T17:28:32.258Z",
-      "ultimaCorridaOk": "2026-11-10T17:28:32.258Z",
+      "ultimaCorrida": "2026-11-10T17:44:12.905Z",
+      "ultimaCorridaOk": "2026-11-10T17:44:12.905Z",
       "series": [
         "dolar_mayorista",
         "dolar_mayorista_diario",
@@ -85,8 +85,8 @@
     },
     "manual": {
       "ok": true,
-      "ultimaCorrida": "2026-11-10T17:29:08.238Z",
-      "ultimaCorridaOk": "2026-11-10T17:29:08.238Z",
+      "ultimaCorrida": "2026-11-10T17:44:12.905Z",
+      "ultimaCorridaOk": "2026-11-10T17:44:12.905Z",
       "series": [
         "despachos_cemento",
         "construya_indice",

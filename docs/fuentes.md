@@ -84,7 +84,7 @@ Además de `valor`, las filas traen `valor_null`, que es la razón de nulo.
 | Productos de plástico (caños, etc.) | Grupo | `252` | 25,5% |
 | Maderas aserradas | Grupo | `201` | 17,2% |
 
-**Redeterminación de obra pública.** Tiene incisos muy útiles para un corralón: `n` Cemento, `s` Hormigón, `m` Aceros (hierro aletado), `q` Arena, `b` Albañilería, `c` Pisos y revestimientos, `h` Caños de PVC, `r` Artefactos para baño y grifería, `w` Membrana impermeabilizante, `k` Asfaltos. Propuesta: usarla como complemento del bloque de costos, con el i.a. por inciso.
+**Redeterminación de obra pública** (decisión: se muestra como tabla en el bloque de costos). Tiene incisos muy útiles para un corralón: `n` Cemento, `s` Hormigón, `m` Aceros (hierro aletado), `q` Arena, `b` Albañilería, `c` Pisos y revestimientos, `h` Caños de PVC, `r` Artefactos para baño y grifería, `w` Membrana impermeabilizante, `k` Asfaltos. Propuesta: usarla como complemento del bloque de costos, con el i.a. por inciso.
 
 **Población** (`jurisdiccion_cod = 06`). No hay fila de total: el ETL suma los valores de `sexo_cod` 1 (Mujer) y 2 (Varón). Códigos de partido verificados: Exaltación de la Cruz `06266`, General Rodríguez `06364`, Luján `06497`, Marcos Paz `06525`, Mercedes `06532`, Moreno `06560`, Pilar `06638`.
 
@@ -125,7 +125,7 @@ Además de `valor`, las filas traen `valor_null`, que es la razón de nulo.
 | Mosaicos graníticos y calcáreos | `33.3_ISAC_MOSAIEOS_0_0_36_91` | `33.4_ISAC_MOSAIEOS_0_0_36_95` | ✅ |
 | Resto | `33.3_ISAC_RESTOSTO_0_0_10_50` | `33.4_ISAC_RESTOSTO_0_0_10_0` | ❌ todo `null` |
 
-**Decisión propuesta:** para el ranking i.a. de insumos usar la serie **original** cuando existe. Para cemento, sanitarios y asfalto (sin original publicado) usar la **desestacionalizada** y marcarla así en la UI. Una i.a. sobre la desestacionalizada es comparable mes contra mismo mes, pero no es idéntica a la original. Alternativa: usar los despachos de la AFCP (CSV manual) como dato de cemento.
+**Decisión (confirmada):** para el ranking i.a. de insumos se usa la serie **original** cuando existe. Para cemento, sanitarios y asfalto (sin original publicada) se usa la **desestacionalizada**, marcada con * y explicada en la app. Una i.a. sobre la desestacionalizada es comparable mes contra mismo mes, pero no es idéntica a la original. Alternativa: usar los despachos de la AFCP (CSV manual) como dato de cemento.
 
 ### Macro y empleo
 
@@ -175,10 +175,10 @@ Las series diarias se agregan a **promedio mensual** (dólar, tasas, UVA) y a **
 
 No aparecen en Series de Tiempo ("permisos" devuelve 0 resultados) ni en el catálogo de la API INDEC. INDEC los publica dentro de los cuadros de "Indicadores de coyuntura de la actividad de la construcción" (superficie cubierta autorizada en una nómina de municipios). Hay dos opciones:
 
-1. **CSV manual** (`data/manual/permisos_edificacion.csv`), cargado desde el cuadro de INDEC. Es la opción simple.
-2. Descarga automática del cuadro de INDEC: frágil, porque el nombre y el formato del archivo cambian.
+**Decisión: carga manual** en `data/manual/permisos_edificacion.csv`, desde la planilla
+`https://www.indec.gob.ar/ftp/cuadros/economia/permisos_edificacion_246_municipios.xlsx` (enero 2021 a agosto 2026 al 10/11/2026).
 
-⏳ Falta revisar si la nómina incluye algún partido de zona oeste (Luján, Moreno, Pilar…). Si los incluye, sería el único dato municipal de actividad del bloque 4.
+✅ La nómina incluye **Moreno, General Rodríguez y Mercedes**. No incluye Luján, Pilar, Marcos Paz ni Exaltación de la Cruz. El CSV ya trae cargados 2024-01 a 2026-08, copiados de esa planilla.
 
 ## 5. Fuentes manuales (sin cambios respecto del plan)
 

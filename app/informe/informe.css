@@ -1,0 +1,42 @@
+/* Modo informe: una hoja A4 (210 × 297 mm). */
+.informe { max-width: 210mm; margin: 0 auto; padding: 12px 16px 24px; background: var(--surface); }
+.barra-informe { display: flex; gap: 8px; justify-content: space-between; margin-bottom: 12px; }
+.inf-encabezado h1 { font-size: 1.25rem; margin: 0; }
+.inf-encabezado p { margin: 2px 0 0; font-size: 0.78rem; color: var(--muted); }
+.informe .kpis { grid-template-columns: 1fr 1fr 1fr; gap: 6px; margin-top: 8px; }
+.informe .kpi { padding: 7px 9px; gap: 2px; box-shadow: none; border-width: 1px 1px 1px 4px; }
+.informe .kpi .titulo { font-size: 0.7rem; }
+.informe .kpi .valor { font-size: 1.15rem; }
+.informe .kpi .valor small { font-size: 0.7rem; }
+.informe .kpi .vars { gap: 8px; font-size: 0.7rem; }
+.informe .kpi .vars b { font-size: 0.78rem; }
+.informe .kpi .vars .et { font-size: 0.6rem; }
+.informe .kpi .pie { font-size: 0.6rem; }
+.informe .chip { font-size: 0.58rem; padding: 1px 6px; }
+.informe .lectura { padding: 8px 12px; margin-top: 8px; box-shadow: none; }
+.informe .lectura h2 { font-size: 0.85rem; margin-bottom: 4px; }
+.informe .lectura ol { gap: 2px; }
+.informe .lectura li { font-size: 0.74rem; line-height: 1.35; }
+.informe .nota { padding: 6px 12px; margin-top: 6px; font-size: 0.74rem; }
+.informe .nota h2 { font-size: 0.8rem; margin: 0 0 2px; }
+.mini-grilla { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 14px; margin-top: 8px; }
+.mini { margin: 0; overflow: hidden; }
+.mini figcaption { font-size: 0.68rem; color: var(--muted); margin-bottom: 2px; }
+.mini figcaption b { color: var(--text); }
+.inf-fuentes { font-size: 0.6rem; color: var(--muted); margin: 6px 0 0; line-height: 1.35; }
+
+@media (max-width: 720px) {
+  .informe .kpis, .mini-grilla { grid-template-columns: 1fr; }
+}
+
+@page { size: A4; margin: 9mm; }
+@media print {
+  :root { color-scheme: light; }
+  body { background: #fff; }
+  .no-imprimir { display: none !important; }
+  .informe { max-width: none; padding: 0; }
+  .informe .kpis { grid-template-columns: 1fr 1fr 1fr; }
+  .mini-grilla { grid-template-columns: 1fr 1fr; }
+  .kpi, .lectura, .mini { break-inside: avoid; }
+  * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}

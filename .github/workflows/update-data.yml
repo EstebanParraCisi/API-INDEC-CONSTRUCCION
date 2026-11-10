@@ -1,0 +1,53 @@
+name: Actualizar datos
+
+on:
+  schedule:
+    # Días hábiles a las 9:00 de Argentina (12:00 UTC)
+    - cron: "0 12 * * 1-5"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-data
+  cancel-in-progress: false
+
+jobs:
+  etl:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Correr ETL
+        env:
+          INDEC_API_TOKEN: ${{ secrets.INDEC_API_TOKEN }}
+        run: npm run etl
+
+      # Tests de cálculo y del ETL. Los valores de control (tests/control.test.ts) se corren a mano:
+      # si INDEC revisa un dato histórico, ese test puede cambiar sin que haya un error.
+      - name: Tests
+        run: npx vitest run --exclude tests/control.test.ts
+
+      - name: Verificar que la app compila
+        run: npm run build
+
+      - name: Commitear datos si cambiaron
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          if git diff --cached --quiet; then
+            echo "Sin cambios en los datos."
+          else
+            git commit -m "Datos: actualización automática $(date -u +%Y-%m-%d)"
+            git push
+          fi
