@@ -6,22 +6,51 @@ import { formatoFecha } from "@/lib/formato";
 import { nombreMes } from "@/lib/periodo";
 import { ultimoDato } from "./ui";
 
-export function Lectura({ frases, titulo = "Lectura del mes" }: { frases: Frase[]; titulo?: string }) {
+export function Resumen({ titular, frases }: { titular: string | null; frases: Frase[] }) {
   return (
-    <section className="lectura" aria-labelledby="lectura-t">
-      <h2 id="lectura-t">{titulo}</h2>
-      {frases.length ? (
-        <ol>
+    <section className="resumen" aria-labelledby="resumen-t">
+      <p className="resumen-etiqueta">Resumen del mes</p>
+      <h2 id="resumen-t">{titular ?? "Todavía no hay datos suficientes para este mes."}</h2>
+      {frases.length > 0 && (
+        <ul>
           {frases.map((f) => (
             <li key={f.regla} data-regla={f.regla}>
               {f.texto}
             </li>
           ))}
-        </ol>
-      ) : (
-        <p className="vacio">No hay datos suficientes para este mes.</p>
+        </ul>
       )}
     </section>
+  );
+}
+
+const GLOSARIO: [string, string][] = [
+  ["ISAC", "Indicador de actividad de la construcción (INDEC). Mide cuántos materiales se despachan para obras: es el mejor termómetro de cuánto se construye."],
+  ["ICC", "Índice del costo de la construcción en el Gran Buenos Aires (INDEC): cuánto cuesta construir una vivienda tipo, en materiales, mano de obra y gastos generales."],
+  ["IPC", "Índice de precios al consumidor: la inflación."],
+  ["Precios mayoristas", "Precios a la salida de fábrica o de importación, sin impuestos (IPIM del INDEC). Anticipan los costos de reposición."],
+  ["Permisos de edificación", "Metros cuadrados que los municipios autorizan a construir. Anticipan obras de los próximos meses."],
+  ["EMAE", "Estimador mensual de la actividad económica (INDEC): el PBI de cada mes."],
+  ["TAMAR / BADLAR", "Tasas que pagan los bancos por depósitos grandes: la referencia del costo del dinero."],
+  ["UVA", "Unidad que se ajusta por inflación. Los créditos hipotecarios actuales se expresan en UVA."],
+  ["REM", "Encuesta del BCRA a economistas sobre la inflación esperada."],
+  ["Desestacionalizada", "Serie a la que se le saca el efecto calendario (vacaciones, feriados, días hábiles) para ver la tendencia."],
+  ["“vs mismo mes 2025”", "Compara contra el mismo mes del año pasado, así no influyen las estaciones."],
+];
+
+export function Glosario() {
+  return (
+    <details className="glosario">
+      <summary>Glosario: qué quiere decir cada sigla</summary>
+      <dl>
+        {GLOSARIO.map(([t, d]) => (
+          <div key={t}>
+            <dt>{t}</dt>
+            <dd>{d}</dd>
+          </div>
+        ))}
+      </dl>
+    </details>
   );
 }
 
@@ -86,6 +115,7 @@ export function PiePagina({ series }: { series: Series }) {
   return (
     <footer className="pie-pagina">
       <div className="contenedor">
+        <Glosario />
         <h2>Fuentes</h2>
         <p>
           <span className="fuente-indec">Fuente: INDEC</span>, BCRA, Ministerio de Capital Humano (vía datos.gob.ar) y entidades del sector. Solo datos públicos. Cuando una serie no tiene dato para un mes, se muestra “sin dato”: nunca se completa ni se estima.

@@ -2,21 +2,21 @@
 
 import { useEffect, useMemo, useState } from "react";
 import type { Serie, Status } from "@/lib/types";
-import { calcularKpis, medir, mesesDisponibles, obtener } from "@/lib/indicadores";
+import { calcularKpis, mesesDisponibles, obtener } from "@/lib/indicadores";
 import { generarLectura, hechosDesdeSeries } from "@/lib/lectura";
+import { titularDelMes } from "@/lib/titular";
 import { varInteranual } from "@/lib/calc";
 import { formatoNumero, formatoPct } from "@/lib/formato";
-import { continua, porMes, type FilaMes } from "@/lib/graficos";
+import { porMes, type FilaMes } from "@/lib/graficos";
 import { MESES_CORTOS, nombreMesAnio, periodo } from "@/lib/periodo";
 import { Kpis } from "./Kpis";
-import { Lectura, NotaDelMes } from "./comunes";
+import { NotaDelMes, Resumen } from "./comunes";
 import { Comparacion, GraficoLineas } from "./graficos";
-import { ultimoDato } from "./ui";
 
 type Props = { series: Record<string, Serie>; status: Status | null; nota: string | null; mesDefecto: string; frescura: string };
 
 const ANCHO = 340;
-const ALTO = 104;
+const ALTO = 120;
 
 function MiniGrafico({ titulo, sub, children }: { titulo: string; sub: string; children: React.ReactNode }) {
   return (
@@ -38,15 +38,13 @@ export function Informe({ series, nota, mesDefecto, frescura }: Props) {
   }, [meses]);
 
   const kpis = calcularKpis(series, ref);
-  const frases = generarLectura(hechosDesdeSeries(series, ref));
+  const hechos = hechosDesdeSeries(series, ref);
+  const frases = generarLectura(hechos);
   const isac = obtener(series, "isac_general");
   const icc = obtener(series, "icc_general");
   const ipc = obtener(series, "ipc_gba");
-  const perm = obtener(series, "permisos_superficie");
-  const may = obtener(series, "dolar_mayorista");
   const iaMes: FilaMes[] = MESES_CORTOS.map((mes, i) => ({ mes, icc: varInteranual(icc, periodo(2026, i + 1)), ipc: varInteranual(ipc, periodo(2026, i + 1)) }));
-  const usadas = [isac, icc, ipc, perm, may, obtener(series, "despachos_cemento"), obtener(series, "escrituras_pba_hipotecas")];
-  const fuentes = [...new Map(usadas.map((s) => [s.fuente, s])).values()];
+  const fuentes = [...new Set(kpis.map((k) => k.serie.fuente.replace(/ vía Series de Tiempo$/, "")))];
 
   return (
     <div className="informe">
@@ -64,14 +62,14 @@ export function Informe({ series, nota, mesDefecto, frescura }: Props) {
           Informe de <b>{nombreMesAnio(ref)}</b> · 2026 vs 2025 · {frescura}
         </p>
       </header>
-      <Kpis kpis={kpis} refMes={ref} compacta />
-      <Lectura frases={frases} titulo="Lectura del mes" />
+      <Resumen titular={titularDelMes(hechos, ref)} frases={frases} />
       <NotaDelMes nota={nota} />
+      <Kpis kpis={kpis} refMes={ref} />
       <div className="mini-grilla">
-        <MiniGrafico titulo="Actividad (ISAC)" sub={`índice 2004=100 · gris 2025, color 2026 · ${formatoPct(medir(isac, ref).ia, { signo: true })} i.a.`}>
+        <MiniGrafico titulo="Obras en marcha (ISAC)" sub="gris 2025 · color 2026">
           <Comparacion datos={porMes(isac.datos)} formato={(v) => formatoNumero(v, 0)} ancho={ANCHO} alto={ALTO} animar={false} />
         </MiniGrafico>
-        <MiniGrafico titulo="Costo de construir vs inflación" sub="variación interanual 2026 · color ICC, gris IPC GBA">
+        <MiniGrafico titulo="Costo de construir vs inflación" sub="suba en un año · color construir, gris inflación">
           <GraficoLineas
             datos={iaMes}
             formato={(v) => formatoPct(v, { decimales: 0 })}
@@ -79,20 +77,14 @@ export function Informe({ series, nota, mesDefecto, frescura }: Props) {
             alto={ALTO}
             animar={false}
             lineas={[
-              { clave: "icc", nombre: "ICC", color: "var(--accent)" },
-              { clave: "ipc", nombre: "IPC GBA", color: "var(--neu)", punteada: true },
+              { clave: "icc", nombre: "Construir", color: "var(--accent)" },
+              { clave: "ipc", nombre: "Inflación", color: "var(--neu)", punteada: true },
             ]}
           />
         </MiniGrafico>
-        <MiniGrafico titulo="Permisos de edificación" sub="m² autorizados · gris 2025, color 2026">
-          <Comparacion datos={porMes(perm.datos)} formato={(v) => `${formatoNumero(v / 1e6, 1)} M`} ancho={ANCHO} alto={ALTO} animar={false} />
-        </MiniGrafico>
-        <MiniGrafico titulo="Dólar mayorista" sub="promedio mensual, $ por USD">
-          <GraficoLineas datos={continua({ may: may.datos }, "2025-01")} formato={(v) => formatoNumero(v, 0)} ancho={ANCHO} alto={ALTO} animar={false} lineas={[{ clave: "may", nombre: "Mayorista", color: "var(--accent)" }]} />
-        </MiniGrafico>
       </div>
       <p className="inf-fuentes">
-        <b>Fuente: INDEC</b>, BCRA y datos.gob.ar. {fuentes.map((s) => `${s.fuente} (último dato: ${ultimoDato(s)})`).join(" · ")}. Solo datos públicos; “sin dato” = la fuente todavía no publicó ese mes.
+        <b>Fuente: INDEC</b>, {fuentes.filter((f) => f !== "INDEC").join(", ")}. Solo datos públicos. Cada dato es del último mes que publicó su fuente.
       </p>
     </div>
   );

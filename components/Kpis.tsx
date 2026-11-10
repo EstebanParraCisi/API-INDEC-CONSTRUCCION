@@ -1,126 +1,64 @@
 import type { Kpi } from "@/lib/indicadores";
-import { formatoNumero, formatoPct, formatoPesos } from "@/lib/formato";
+import { formatoPct } from "@/lib/formato";
 import { nombreMesAnio } from "@/lib/periodo";
 
-const ETIQUETA_IMPACTO = { favorable: "Favorable", desfavorable: "Desfavorable", neutro: "Neutro", "sin-dato": "Sin dato" } as const;
-
-function valorPrincipal(k: Kpi): React.ReactNode {
-  const v = k.medida.valor;
-  if (v === null) return "sin dato";
-  switch (k.formatoValor) {
-    case "indice":
-      return (
-        <>
-          {formatoNumero(v, 1)}
-          <small>puntos</small>
-        </>
-      );
-    case "pesos":
-      return formatoPesos(v, 2);
-    case "toneladas":
-      return (
-        <>
-          {formatoNumero(v, 0)}
-          <small>t</small>
-        </>
-      );
-    case "m2":
-      return (
-        <>
-          {formatoNumero(v, 0)}
-          <small>m²</small>
-        </>
-      );
-    case "cantidad":
-      return formatoNumero(v, 0);
-    case "pct":
-      return (
-        <>
-          {formatoPct(k.medida.ia)}
-          <small>interanual</small>
-        </>
-      );
-  }
-}
+const ETIQUETA = { favorable: "A favor", desfavorable: "En contra", neutro: "Neutro", "sin-dato": "Sin dato" } as const;
 
 function flecha(x: number | null): string {
-  if (x === null) return "";
-  if (Math.abs(x) < 0.0005) return "→";
-  return x > 0 ? "↑" : "↓";
+  if (x === null || Math.abs(x) < 0.0005) return "";
+  return x > 0 ? "▲" : "▼";
 }
 
-export function TarjetaKpi({ k, refMes, compacta = false }: { k: Kpi; refMes: string; compacta?: boolean }) {
+export function TarjetaKpi({ k, refMes }: { k: Kpi; refMes: string }) {
   const m = k.medida;
   const atrasado = m.periodo && m.periodo !== refMes;
-  const esIcc = k.formatoValor === "pct";
   return (
     <article className={`kpi ${k.impacto}`} aria-label={k.titulo}>
-      <p className="titulo">
-        <span>{k.titulo}</span>
-        <span className={`chip ${k.impacto}`} title={k.explicacion}>
-          {ETIQUETA_IMPACTO[k.impacto]}
+      <header className="kpi-cab">
+        <h3>
+          {k.titulo} <span className="sigla">{k.sigla}</span>
+        </h3>
+        <span className={`semaforo ${k.impacto}`} title={k.explicacion}>
+          <i aria-hidden />
+          {ETIQUETA[k.impacto]}
         </span>
-      </p>
-      <div className="valor num">{valorPrincipal(k)}</div>
-      {m.periodo ? (
-        <div className="vars num">
-          {esIcc ? (
-            <div>
-              <span className="et">Mensual</span>
-              <b>{formatoPct(m.mm, { signo: true })}</b>
-            </div>
-          ) : (
-            <div>
-              <span className="et">vs mismo mes 2025</span>
-              <b>
-                <span className="flecha" aria-hidden>
-                  {flecha(m.ia)}
-                </span>
-                {formatoPct(m.ia, { signo: true })}
-              </b>
-            </div>
-          )}
-          <div>
-            <span className="et">{k.etiquetaAcum}</span>
-            <b>{formatoPct(m.acum, { signo: true })}</b>
-          </div>
-          {m.acumAnterior !== null && (
-            <div>
-              <span className="et">{k.etiquetaAcumAnterior}</span>
-              <b>{formatoPct(m.acumAnterior, { signo: true })}</b>
-            </div>
-          )}
-        </div>
+      </header>
+      {k.principal !== null ? (
+        <>
+          <p className="kpi-numero num">
+            <span aria-hidden className="kpi-flecha">
+              {flecha(k.principal)}
+            </span>
+            {formatoPct(k.principal, { signo: true })}
+            <small>{k.principalEtiqueta}</small>
+          </p>
+          <ul className="kpi-lineas num">
+            {k.lineas.map((l) => (
+              <li key={l}>{l}</li>
+            ))}
+          </ul>
+        </>
       ) : (
-        <p className="vacio">Sin datos cargados todavía.</p>
+        <p className="vacio">Sin datos todavía.</p>
       )}
-      {k.extra && <div className="pie num">{k.extra}</div>}
-      <div className="pie">
-        {m.periodo ? (
-          <>
-            {atrasado ? `Último dato: ${nombreMesAnio(m.periodo)} (aún no hay ${nombreMesAnio(refMes)})` : `Dato de ${nombreMesAnio(m.periodo)}`}
-            {m.obs ? ` · ${m.obs.replace(/^\*+\s*/, "")}` : ""} · {k.serie.fuente}
-          </>
-        ) : (
-          <>Fuente: {k.serie.fuente}. Se carga a mano cada mes (ver README).</>
-        )}
-        {!compacta && k.adelantado && (
-          <>
-            {" "}
-            · <span className="chip adelantado">Indicador adelantado</span>
-          </>
-        )}
-      </div>
+      <p className="kpi-pie">
+        {m.periodo ? (atrasado ? `Último dato: ${nombreMesAnio(m.periodo)}` : `Dato de ${nombreMesAnio(m.periodo)}`) : "Se carga a mano cada mes"} · {k.serie.fuente.replace(/ vía Series de Tiempo$/, "")}
+      </p>
     </article>
   );
 }
 
-export function Kpis({ kpis, refMes, compacta }: { kpis: Kpi[]; refMes: string; compacta?: boolean }) {
+export function Kpis({ kpis, refMes }: { kpis: Kpi[]; refMes: string }) {
   return (
-    <div className="kpis">
-      {kpis.map((k) => (
-        <TarjetaKpi key={k.id} k={k} refMes={refMes} compacta={compacta} />
-      ))}
-    </div>
+    <>
+      <div className="kpis">
+        {kpis.map((k) => (
+          <TarjetaKpi key={k.id} k={k} refMes={refMes} />
+        ))}
+      </div>
+      <p className="leyenda-semaforo">
+        El color indica el <b>impacto para el negocio</b>, no si el número sube o baja: <span className="semaforo favorable"><i aria-hidden />a favor</span> <span className="semaforo desfavorable"><i aria-hidden />en contra</span> <span className="semaforo neutro"><i aria-hidden />neutro</span>. Cada dato es del último mes que publicó su fuente.
+      </p>
+    </>
   );
 }

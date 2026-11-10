@@ -3,6 +3,7 @@
  */
 import { acumulado, acumuladoPrecios, ultimoPeriodoHasta, valorEn, varInteranual, varMensual } from "./calc";
 import { nombreMes, periodo as mkPeriodo, partes } from "./periodo";
+import { formatoNumero, formatoPct, formatoPesos } from "./formato";
 import type { Serie } from "./types";
 
 export type Series = Record<string, Serie>;
@@ -67,32 +68,36 @@ export function medir(serie: Serie, ref: string, modoAcum?: "precios"): Medida {
 
 export type Kpi = {
   id: string;
+  /** Nombre en castellano llano ("Obras en marcha"). */
   titulo: string;
+  /** Nombre técnico, chico al lado del título ("ISAC"). */
+  sigla: string;
   serie: Serie;
   medida: Medida;
-  formatoValor: "indice" | "pesos" | "toneladas" | "m2" | "cantidad" | "pct";
+  /** El número grande: variación contra el mismo mes de 2025. */
+  principal: number | null;
+  /** Qué compara el número grande ("vs agosto 2025"). */
+  principalEtiqueta: string;
+  /** Líneas cortas de contexto debajo del número grande. */
+  lineas: string[];
   sentido: Sentido;
   impacto: Impacto;
-  /** Texto corto que explica el semáforo. */
+  /** Por qué el color es ese (tooltip). */
   explicacion: string;
-  etiquetaAcum: string;
-  etiquetaAcumAnterior: string;
-  extra?: string;
-  adelantado?: boolean;
 };
 
-function etiquetaAcumAnterior(m: Medida, precios = false): string {
-  if (!m.periodo) return "Mismo período 2025";
-  const { anio, mes } = partes(m.periodo);
-  if (precios) return `Mismo período ${anio - 1}`;
-  return mes === 1 ? `Enero ${anio - 1} vs ${anio - 2}` : `Ene–${nombreMes(m.periodo).slice(0, 3)} ${anio - 1} vs ${anio - 2}`;
+const pctS = (x: number | null) => formatoPct(x, { signo: true });
+
+function vsMes(m: Medida): string {
+  if (!m.periodo) return "";
+  const { anio } = partes(m.periodo);
+  return `vs ${nombreMes(m.periodo)} ${anio - 1}`;
 }
 
-function etiquetaAcum(m: Medida, precios = false): string {
-  if (!m.periodo) return "Acumulado 2026";
-  const mes = partes(m.periodo).mes;
-  if (precios) return `Acumulado ${partes(m.periodo).anio} (desde dic.)`;
-  return mes === 1 ? `Enero vs enero ${partes(m.periodo).anio - 1}` : `Ene–${nombreMes(m.periodo).slice(0, 3)} vs ${partes(m.periodo).anio - 1}`;
+function enElAnio(m: Medida): string | null {
+  if (m.acum === null || !m.periodo) return null;
+  const { anio, mes } = partes(m.periodo);
+  return mes === 1 ? null : `En el año (ene–${nombreMes(m.periodo).slice(0, 3)}): ${pctS(m.acum)} vs ${anio - 1}`;
 }
 
 export function calcularKpis(series: Series, ref: string): Kpi[] {
@@ -105,95 +110,99 @@ export function calcularKpis(series: Series, ref: string): Kpi[] {
   const dol = obtener(series, "dolar_mayorista");
 
   const mIsac = medir(isac, ref);
-  const mIcc = medir(icc, ref);
-  const mIpc = medir(ipc, mIcc.periodo ?? ref);
+  const mIcc = medir(icc, ref, "precios");
+  const mIpc = medir(ipc, mIcc.periodo ?? ref, "precios");
   const mCem = medir(cem, ref);
   const mPerm = medir(perm, ref);
   const mHip = medir(hip, ref);
   const mDol = medir(dol, ref, "precios");
 
   const brecha = mIcc.ia !== null && mIpc.ia !== null && mIpc.periodo === mIcc.periodo ? mIcc.ia - mIpc.ia : null;
+  const lineas = (...xs: (string | null | false)[]) => xs.filter((x): x is string => !!x);
 
   return [
     {
       id: "isac",
-      titulo: "Actividad de la construcción (ISAC)",
+      titulo: "Obras en marcha",
+      sigla: "ISAC",
       serie: isac,
       medida: mIsac,
-      formatoValor: "indice",
+      principal: mIsac.ia,
+      principalEtiqueta: vsMes(mIsac),
+      lineas: lineas(enElAnio(mIsac)),
       sentido: "sube-bueno",
       impacto: impacto(mIsac.ia, "sube-bueno"),
-      explicacion: "Más actividad = más demanda de materiales.",
-      etiquetaAcum: etiquetaAcum(mIsac),
-      etiquetaAcumAnterior: etiquetaAcumAnterior(mIsac),
+      explicacion: "Más obra en marcha = más demanda de materiales.",
     },
     {
       id: "icc",
-      titulo: "Costo de la construcción (ICC) vs inflación",
+      titulo: "Cuánto cuesta construir",
+      sigla: "ICC GBA",
       serie: icc,
       medida: mIcc,
-      formatoValor: "pct",
+      principal: mIcc.ia,
+      principalEtiqueta: mIcc.periodo ? `en un año (a ${nombreMes(mIcc.periodo)})` : "",
+      lineas: lineas(
+        mIpc.ia !== null && `Inflación en el mismo año: ${pctS(mIpc.ia)}`,
+        brecha !== null && (Math.abs(brecha) < 0.01 ? "Construir subió casi igual que la inflación" : brecha < 0 ? "Construir subió menos que la inflación" : "Construir subió más que la inflación"),
+      ),
       sentido: "sube-malo",
       impacto: impacto(brecha, "sube-malo"),
-      explicacion: "Rojo si construir se encarece más que la inflación (frena obras).",
-      etiquetaAcum: etiquetaAcum(mIcc, true),
-      etiquetaAcumAnterior: etiquetaAcumAnterior(mIcc, true),
-      extra: mIpc.ia !== null ? `Inflación GBA i.a.: ${fmtPctCorto(mIpc.ia)}` : undefined,
+      explicacion: "En contra si construir se encarece más que la inflación: frena obras de particulares.",
     },
     {
       id: "cemento",
-      titulo: "Despachos de cemento",
+      titulo: "Venta de cemento",
+      sigla: "AFCP",
       serie: cem,
       medida: mCem,
-      formatoValor: "toneladas",
+      principal: mCem.ia,
+      principalEtiqueta: vsMes(mCem),
+      lineas: lineas(mCem.valor !== null && `${formatoNumero(mCem.valor, 0)} toneladas en el mes`, enElAnio(mCem)),
       sentido: "sube-bueno",
       impacto: impacto(mCem.ia, "sube-bueno"),
-      explicacion: "Más cemento despachado = más obra en marcha.",
-      etiquetaAcum: etiquetaAcum(mCem),
-      etiquetaAcumAnterior: etiquetaAcumAnterior(mCem),
+      explicacion: "Más cemento despachado = más obra.",
     },
     {
       id: "permisos",
-      titulo: "Permisos de edificación (superficie)",
+      titulo: "Obras que vienen",
+      sigla: "permisos de edificación",
       serie: perm,
       medida: mPerm,
-      formatoValor: "m2",
+      principal: mPerm.ia,
+      principalEtiqueta: vsMes(mPerm),
+      lineas: lineas(mPerm.valor !== null && `${formatoNumero(mPerm.valor, 0)} m² autorizados en el mes`, enElAnio(mPerm), "Anticipa la demanda de los próximos 3–6 meses"),
       sentido: "sube-bueno",
       impacto: impacto(mPerm.ia, "sube-bueno"),
-      explicacion: "Indicador adelantado: anticipa obras en 3–6 meses.",
-      etiquetaAcum: etiquetaAcum(mPerm),
-      etiquetaAcumAnterior: etiquetaAcumAnterior(mPerm),
-      adelantado: true,
+      explicacion: "Más metros autorizados hoy = más obras (y compras de materiales) en unos meses.",
     },
     {
       id: "hipotecas",
-      titulo: "Hipotecas en Provincia de Buenos Aires",
+      titulo: "Créditos hipotecarios en PBA",
+      sigla: "escrituras",
       serie: hip,
       medida: mHip,
-      formatoValor: "cantidad",
+      principal: mHip.ia,
+      principalEtiqueta: vsMes(mHip),
+      lineas: lineas(mHip.valor !== null && `${formatoNumero(mHip.valor, 0)} hipotecas escrituradas en el mes`, enElAnio(mHip)),
       sentido: "sube-bueno",
       impacto: impacto(mHip.ia, "sube-bueno"),
       explicacion: "Más crédito = más compraventas y refacciones.",
-      etiquetaAcum: etiquetaAcum(mHip),
-      etiquetaAcumAnterior: etiquetaAcumAnterior(mHip),
     },
     {
       id: "dolar",
-      titulo: "Dólar mayorista (promedio del mes)",
+      titulo: "Dólar mayorista",
+      sigla: "BCRA",
       serie: dol,
       medida: mDol,
-      formatoValor: "pesos",
+      principal: mDol.ia,
+      principalEtiqueta: vsMes(mDol),
+      lineas: lineas(mDol.valor !== null && `Promedio del mes: ${formatoPesos(mDol.valor, 2)}`, mDol.acum !== null && `Desde diciembre: ${pctS(mDol.acum)}`),
       sentido: "neutro",
       impacto: mDol.valor === null ? "sin-dato" : "neutro",
-      explicacion: "Neutro: encarece insumos importados pero también abarata la obra en dólares.",
-      etiquetaAcum: etiquetaAcum(mDol, true),
-      etiquetaAcumAnterior: etiquetaAcumAnterior(mDol, true),
+      explicacion: "Neutro: encarece lo importado, pero también abarata la obra medida en dólares.",
     },
   ];
-}
-
-function fmtPctCorto(x: number): string {
-  return `${(x * 100).toFixed(1).replace(".", ",")}%`;
 }
 
 /** Meses de 2026 que se pueden elegir como referencia: desde enero hasta el último con ISAC o ICC. */

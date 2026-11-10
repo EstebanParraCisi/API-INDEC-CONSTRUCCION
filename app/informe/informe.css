@@ -4,21 +4,24 @@
 .inf-encabezado h1 { font-size: 1.25rem; margin: 0; }
 .inf-encabezado p { margin: 2px 0 0; font-size: 0.78rem; color: var(--muted); }
 .informe .kpis { grid-template-columns: 1fr 1fr 1fr; gap: 6px; margin-top: 8px; }
-.informe .kpi { padding: 5px 8px; gap: 1px; box-shadow: none; border-width: 1px 1px 1px 4px; }
-.informe .kpi .titulo { font-size: 0.7rem; }
-.informe .kpi .valor { font-size: 1.15rem; }
-.informe .kpi .valor small { font-size: 0.7rem; }
-.informe .kpi .vars { gap: 8px; font-size: 0.7rem; }
-.informe .kpi .vars b { font-size: 0.78rem; }
-.informe .kpi .vars .et { font-size: 0.6rem; }
-.informe .kpi .pie { font-size: 0.6rem; }
-.informe .chip { font-size: 0.58rem; padding: 1px 6px; }
-.informe .lectura { padding: 6px 10px; margin-top: 6px; box-shadow: none; }
-.informe .lectura h2 { font-size: 0.85rem; margin-bottom: 4px; }
-.informe .lectura ol { gap: 2px; }
-.informe .lectura li { font-size: 0.72rem; line-height: 1.3; }
-.informe .nota { padding: 6px 12px; margin-top: 6px; font-size: 0.74rem; }
-.informe .nota h2 { font-size: 0.8rem; margin: 0 0 2px; }
+.informe .kpi { padding: 6px 9px; gap: 1px; box-shadow: none; border-top-width: 3px; }
+.informe .kpi-cab h3 { font-size: 0.74rem; }
+.informe .sigla { font-size: 0.6rem; }
+.informe .semaforo { font-size: 0.6rem; }
+.informe .semaforo i { width: 7px; height: 7px; }
+.informe .kpi-numero { font-size: 1.25rem; margin-top: 2px; }
+.informe .kpi-numero small { font-size: 0.62rem; }
+.informe .kpi-flecha { font-size: 0.75rem; }
+.informe .kpi-lineas { font-size: 0.64rem; gap: 0; margin-top: 1px; }
+.informe .kpi-pie { font-size: 0.56rem; padding-top: 2px; }
+.informe .leyenda-semaforo { font-size: 0.6rem; margin-top: 4px; }
+.informe .resumen { padding: 8px 12px; margin-top: 8px; box-shadow: none; border-left-width: 4px; }
+.informe .resumen-etiqueta { font-size: 0.6rem; }
+.informe .resumen h2 { font-size: 0.98rem; margin: 2px 0 4px; }
+.informe .resumen ul { gap: 1px; }
+.informe .resumen li { font-size: 0.72rem; line-height: 1.3; }
+.informe .nota { padding: 6px 12px; margin-top: 6px; font-size: 0.72rem; }
+.informe .nota h2 { font-size: 0.78rem; margin: 0 0 2px; }
 .mini-grilla { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 14px; margin-top: 6px; }
 .mini { margin: 0; overflow: hidden; }
 .mini figcaption { font-size: 0.68rem; color: var(--muted); margin-bottom: 2px; }
@@ -37,6 +40,6 @@
   .informe { max-width: none; padding: 0; }
   .informe .kpis { grid-template-columns: 1fr 1fr 1fr; }
   .mini-grilla { grid-template-columns: 1fr 1fr; }
-  .kpi, .lectura, .mini { break-inside: avoid; }
+  .kpi, .resumen, .mini { break-inside: avoid; }
   * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
 }

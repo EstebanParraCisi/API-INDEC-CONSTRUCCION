@@ -6,7 +6,8 @@ import { calcularKpis, mesesDisponibles } from "@/lib/indicadores";
 import { generarLectura, hechosDesdeSeries } from "@/lib/lectura";
 import { nombreMesAnio } from "@/lib/periodo";
 import { Kpis } from "./Kpis";
-import { AvisoFuentes, Lectura, NotaDelMes, PiePagina } from "./comunes";
+import { AvisoFuentes, NotaDelMes, PiePagina, Resumen } from "./comunes";
+import { titularDelMes } from "@/lib/titular";
 import { BloqueActividad, BloqueCostos, BloqueLocal, BloqueMacro } from "./Bloques";
 
 type Props = { series: Record<string, Serie>; status: Status | null; nota: string | null; mesDefecto: string; frescura: string };
@@ -28,7 +29,9 @@ export function Tablero({ series, status, nota, mesDefecto, frescura }: Props) {
   };
 
   const kpis = useMemo(() => calcularKpis(series, ref), [series, ref]);
-  const frases = useMemo(() => generarLectura(hechosDesdeSeries(series, ref)), [series, ref]);
+  const hechos = useMemo(() => hechosDesdeSeries(series, ref), [series, ref]);
+  const frases = useMemo(() => generarLectura(hechos), [hechos]);
+  const titular = titularDelMes(hechos, ref);
 
   return (
     <>
@@ -36,7 +39,7 @@ export function Tablero({ series, status, nota, mesDefecto, frescura }: Props) {
         <div className="contenedor">
           <div>
             <h1>Observatorio de la Construcción 2026</h1>
-            <p className="bajada">Cómo viene la construcción y lo que la afecta en 2026 frente a 2025, y qué significa para un corralón de zona oeste.</p>
+            <p className="bajada">Cómo viene la construcción en 2026 frente a 2025, y qué significa para un corralón de zona oeste.</p>
           </div>
           <div className="controles">
             <label htmlFor="mes">Mes de referencia</label>
@@ -58,9 +61,10 @@ export function Tablero({ series, status, nota, mesDefecto, frescura }: Props) {
       </div>
       <main className="contenedor">
         <AvisoFuentes status={status} />
-        <Kpis kpis={kpis} refMes={ref} />
-        <Lectura frases={frases} titulo={`Lectura de ${nombreMesAnio(ref)}`} />
+        <Resumen titular={titular} frases={frases} />
         <NotaDelMes nota={nota} />
+        <h2 className="titulo-seccion">Los 6 números del mes</h2>
+        <Kpis kpis={kpis} refMes={ref} />
         <BloqueActividad series={series} refMes={ref} />
         <BloqueCostos series={series} refMes={ref} />
         <BloqueMacro series={series} refMes={ref} />

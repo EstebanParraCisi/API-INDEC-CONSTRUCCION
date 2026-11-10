@@ -2,7 +2,7 @@
  * "Lectura del mes": frases generadas por REGLAS DETERMINISTAS (no IA).
  * Cada regla tiene un id estable y un test en tests/lectura.test.ts.
  */
-import { formatoPct, formatoPP } from "./formato";
+import { formatoPct } from "./formato";
 import { medir, obtener, rankingInsumos, type Series } from "./indicadores";
 import { nombreMes } from "./periodo";
 
@@ -36,78 +36,78 @@ export const REGLAS: Regla[] = [
     id: "actividad-enfria-anio-arriba",
     aplica: (h) => h.isac.ia !== null && h.isac.acum !== null && h.isac.ia < 0 && h.isac.acum > 0,
     texto: (h) =>
-      `La actividad cayó ${pct(h.isac.ia!)} interanual en ${mes(h.isac.periodo)}, pero el acumulado del año sigue ${pct(h.isac.acum!)} arriba de 2025: se enfrió en el mes, aunque el año todavía viene mejor.`,
+      `En ${mes(h.isac.periodo)} se construyó ${pct(h.isac.ia!)} menos que un año antes, pero en lo que va del año la actividad sigue ${pct(h.isac.acum!)} arriba de 2025.`,
   },
   {
     id: "actividad-crece",
     aplica: (h) => h.isac.ia !== null && h.isac.acum !== null && h.isac.ia >= 0 && h.isac.acum >= 0,
-    texto: (h) => `La actividad creció ${pct(h.isac.ia!)} interanual en ${mes(h.isac.periodo)} y el acumulado del año viene ${pct(h.isac.acum!)} arriba de 2025.`,
+    texto: (h) => `En ${mes(h.isac.periodo)} se construyó ${pct(h.isac.ia!)} más que un año antes, y en lo que va del año la actividad viene ${pct(h.isac.acum!)} arriba de 2025.`,
   },
   {
     id: "actividad-repunta-anio-abajo",
     aplica: (h) => h.isac.ia !== null && h.isac.acum !== null && h.isac.ia >= 0 && h.isac.acum < 0,
     texto: (h) =>
-      `La actividad subió ${pct(h.isac.ia!)} interanual en ${mes(h.isac.periodo)}, aunque el acumulado del año todavía está ${pct(h.isac.acum!)} abajo de 2025.`,
+      `En ${mes(h.isac.periodo)} se construyó ${pct(h.isac.ia!)} más que un año antes, aunque en lo que va del año la actividad todavía está ${pct(h.isac.acum!)} abajo de 2025.`,
   },
   {
     id: "actividad-cae",
     aplica: (h) => h.isac.ia !== null && h.isac.acum !== null && h.isac.ia < 0 && h.isac.acum < 0,
-    texto: (h) => `La actividad cayó ${pct(h.isac.ia!)} interanual en ${mes(h.isac.periodo)} y el año acumula ${pct(h.isac.acum!)} abajo de 2025.`,
+    texto: (h) => `En ${mes(h.isac.periodo)} se construyó ${pct(h.isac.ia!)} menos que un año antes, y en lo que va del año la actividad está ${pct(h.isac.acum!)} abajo de 2025.`,
   },
   {
     id: "mano-obra-mas-que-materiales",
     aplica: (h) => h.iccManoObra.ia !== null && h.iccMateriales.ia !== null && dif(h.iccManoObra.ia, h.iccMateriales.ia) > 0.05,
     texto: (h) =>
-      `La mano de obra encarece la obra mucho más que los materiales (${formatoPct(h.iccManoObra.ia!)} contra ${formatoPct(h.iccMateriales.ia!)} interanual en ${mes(h.iccManoObra.periodo)}, ${formatoPP(h.iccManoObra.ia! - h.iccMateriales.ia!)} de diferencia): hay margen relativo en el precio de los materiales frente al costo total de construir.`,
+      `En un año la mano de obra subió mucho más que los materiales (${formatoPct(h.iccManoObra.ia!)} contra ${formatoPct(h.iccMateriales.ia!)}): construir se encarece sobre todo por la mano de obra, y hay margen relativo en el precio de los materiales.`,
   },
   {
     id: "materiales-bajo-inflacion",
     aplica: (h) =>
       h.iccMateriales.mm !== null && h.ipc.mm !== null && h.iccMateriales.periodo === h.ipc.periodo && h.iccMateriales.mm < h.ipc.mm,
     texto: (h) =>
-      `Los materiales subieron ${formatoPct(h.iccMateriales.mm!)} en ${mes(h.iccMateriales.periodo)}, por debajo de la inflación (${formatoPct(h.ipc.mm!)}): atención a márgenes si los costos de reposición suben más que la lista.`,
+      `En ${mes(h.iccMateriales.periodo)} los materiales subieron ${formatoPct(h.iccMateriales.mm!)}, menos que la inflación del mes (${formatoPct(h.ipc.mm!)}): ojo con los márgenes si los costos de reposición suben más que la lista.`,
   },
   {
     id: "construir-mas-caro-que-inflacion",
     aplica: (h) => h.iccGeneral.ia !== null && h.ipc.ia !== null && h.iccGeneral.periodo === h.ipc.periodo && dif(h.iccGeneral.ia, h.ipc.ia) > 0.01,
     texto: (h) =>
-      `Construir se encarece más que la vida en general: el costo de la construcción sube ${formatoPct(h.iccGeneral.ia!)} interanual contra ${formatoPct(h.ipc.ia!)} de inflación. Eso puede postergar obras de particulares.`,
+      `Construir se encarece más que la vida en general (${formatoPct(h.iccGeneral.ia!)} en un año contra ${formatoPct(h.ipc.ia!)} de inflación): puede postergar obras de particulares.`,
   },
   {
     id: "construir-mas-barato-que-inflacion",
     aplica: (h) => h.iccGeneral.ia !== null && h.ipc.ia !== null && h.iccGeneral.periodo === h.ipc.periodo && dif(h.ipc.ia, h.iccGeneral.ia) > 0.01,
     texto: (h) =>
-      `Construir se encarece menos que la inflación (${formatoPct(h.iccGeneral.ia!)} contra ${formatoPct(h.ipc.ia!)} interanual): en términos reales la obra se abarata, lo que ayuda a la demanda.`,
+      `Construir se encarece menos que la inflación (${formatoPct(h.iccGeneral.ia!)} en un año contra ${formatoPct(h.ipc.ia!)}): descontada la inflación, la obra se abarata, y eso ayuda a la demanda.`,
   },
   {
     id: "permisos-suben",
     aplica: (h) => h.permisos.ia !== null && h.permisos.ia > 0,
     texto: (h) =>
-      `Más superficie autorizada (${formatoPct(h.permisos.ia!, { signo: true })} interanual en ${mes(h.permisos.periodo)}) anticipa demanda en los próximos 3–6 meses.`,
+      `En ${mes(h.permisos.periodo)} se autorizaron ${pct(h.permisos.ia!)} más metros para construir que un año antes: anticipa más demanda en los próximos 3–6 meses.`,
   },
   {
     id: "permisos-bajan",
     aplica: (h) => h.permisos.ia !== null && h.permisos.ia < 0,
     texto: (h) =>
-      `Se autorizó menos superficie que hace un año (${formatoPct(h.permisos.ia!)} en ${mes(h.permisos.periodo)}): puede anticipar menos obras nuevas en los próximos 3–6 meses.`,
+      `En ${mes(h.permisos.periodo)} se autorizaron ${pct(h.permisos.ia!)} menos metros para construir que un año antes: puede anticipar menos obras nuevas en los próximos 3–6 meses.`,
   },
   {
     id: "hipotecas-empujan",
     aplica: (h) => h.hipotecasPba.ia !== null && h.hipotecasPba.ia > 0.2,
     texto: (h) =>
-      `Las hipotecas en la provincia crecen ${formatoPct(h.hipotecasPba.ia!)} interanual: el crédito hipotecario empuja compraventas y refacciones.`,
+      `Las hipotecas en la provincia crecen ${pct(h.hipotecasPba.ia!)} frente a un año antes: el crédito hipotecario empuja compraventas y refacciones.`,
   },
   {
     id: "hipotecas-caen",
     aplica: (h) => h.hipotecasPba.ia !== null && h.hipotecasPba.ia < -0.2,
     texto: (h) =>
-      `Las hipotecas en la provincia caen ${pct(h.hipotecasPba.ia!)} interanual en ${mes(h.hipotecasPba.periodo)}: el crédito hipotecario dejó de empujar compraventas y refacciones como en 2025.`,
+      `En ${mes(h.hipotecasPba.periodo)} se firmaron ${pct(h.hipotecasPba.ia!)} menos hipotecas en la provincia que un año antes: el crédito ya no empuja compraventas y refacciones como en 2025.`,
   },
   {
     id: "insumos-corralon-extremos",
     aplica: (h) => !!h.insumoMejor && !!h.insumoPeor && h.insumoMejor.nombre !== h.insumoPeor.nombre,
     texto: (h) =>
-      `Entre los insumos de corralón, ${h.insumoMejor!.nombre.toLowerCase()} es el que mejor anda (${formatoPct(h.insumoMejor!.ia, { signo: true })} interanual) y ${h.insumoPeor!.nombre.toLowerCase()} el más flojo (${formatoPct(h.insumoPeor!.ia, { signo: true })}).`,
+      `Entre los materiales de corralón, ${h.insumoMejor!.nombre.toLowerCase()} es el que mejor anda (${formatoPct(h.insumoMejor!.ia, { signo: true })} vs un año antes) y ${h.insumoPeor!.nombre.toLowerCase()} el más flojo (${formatoPct(h.insumoPeor!.ia, { signo: true })}).`,
   },
 ];
 
