@@ -1,10 +1,10 @@
 {
-  "generado": "2026-11-10T18:00:01.839Z",
+  "generado": "2026-11-11T19:12:17.407Z",
   "fuentes": {
     "seriesTiempo": {
       "ok": true,
-      "ultimaCorrida": "2026-11-10T17:44:12.905Z",
-      "ultimaCorridaOk": "2026-11-10T17:44:12.905Z",
+      "ultimaCorrida": "2026-11-11T19:12:17.407Z",
+      "ultimaCorridaOk": "2026-11-11T19:12:17.407Z",
       "series": [
         "isac_general",
         "isac_desest",
@@ -24,8 +24,9 @@
       ]
     },
     "indec": {
-      "ok": true,
-      "ultimaCorrida": "2026-11-10T17:44:12.905Z",
+      "ok": false,
+      "error": "Falta la variable de entorno INDEC_API_TOKEN (token de la API del INDEC).",
+      "ultimaCorrida": "2026-11-11T19:12:17.407Z",
       "ultimaCorridaOk": "2026-11-10T17:44:12.905Z",
       "series": [
         "icc_general",
@@ -68,8 +69,8 @@
     },
     "bcra": {
       "ok": true,
-      "ultimaCorrida": "2026-11-10T17:44:12.905Z",
-      "ultimaCorridaOk": "2026-11-10T17:44:12.905Z",
+      "ultimaCorrida": "2026-11-11T19:12:17.407Z",
+      "ultimaCorridaOk": "2026-11-11T19:12:17.407Z",
       "series": [
         "dolar_mayorista",
         "dolar_mayorista_diario",
@@ -85,8 +86,8 @@
     },
     "manual": {
       "ok": true,
-      "ultimaCorrida": "2026-11-10T18:00:01.839Z",
-      "ultimaCorridaOk": "2026-11-10T18:00:01.839Z",
+      "ultimaCorrida": "2026-11-11T19:12:17.407Z",
+      "ultimaCorridaOk": "2026-11-11T19:12:17.407Z",
       "series": [
         "despachos_cemento",
         "construya_indice",
