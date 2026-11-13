@@ -6,137 +6,141 @@
  "naturaleza": "volumen",
  "fuente": "INDEC (ISAC) vía Series de Tiempo",
  "fuenteUrl": "https://datos.gob.ar/series/?ids=33.4_ISAC_ARTICICA_0_0_37_66",
- "actualizado": "2026-11-10T17:28:39.852Z",
- "ultimoPeriodo": "2026-08",
+ "actualizado": "2026-11-13T19:08:41.891Z",
+ "ultimoPeriodo": "2026-09",
  "nota": "INDEC no publica la serie original de este insumo; se usa la serie desestacionalizada. La variación interanual compara mes contra mismo mes y es muy parecida, aunque no idéntica, a la de la serie original.",
  "datos": [
   {
    "periodo": "2024-01",
-   "valor": 94.4932998261948
+   "valor": 94.5935434647533
   },
   {
    "periodo": "2024-02",
-   "valor": 91.7993187493526
+   "valor": 91.8461130450415
   },
   {
    "periodo": "2024-03",
-   "valor": 62.3573984977867
+   "valor": 62.3631855698165
   },
   {
    "periodo": "2024-04",
-   "valor": 47.3459657462722
+   "valor": 47.0839707950588
   },
   {
    "periodo": "2024-05",
-   "valor": 51.6091329228209
+   "valor": 51.5656726513936
   },
   {
    "periodo": "2024-06",
-   "valor": 62.93291581229
+   "valor": 62.8176621808093
   },
   {
    "periodo": "2024-07",
-   "valor": 62.391797130787
+   "valor": 62.3187582309365
   },
   {
    "periodo": "2024-08",
-   "valor": 68.0625588256308
+   "valor": 68.381490817557
   },
   {
    "periodo": "2024-09",
-   "valor": 58.6813714455983
+   "valor": 58.6927414282573
   },
   {
    "periodo": "2024-10",
-   "valor": 58.5345999559771
+   "valor": 58.6047259093122
   },
   {
    "periodo": "2024-11",
-   "valor": 59.3863319610569
+   "valor": 59.4091902524641
   },
   {
    "periodo": "2024-12",
-   "valor": 84.8566696025439
+   "valor": 84.8096785057478
   },
   {
    "periodo": "2025-01",
-   "valor": 90.2802839583396
+   "valor": 90.4172407110527
   },
   {
    "periodo": "2025-02",
-   "valor": 90.1626292613156
+   "valor": 90.2146333731574
   },
   {
    "periodo": "2025-03",
-   "valor": 74.3897437354076
+   "valor": 74.3882395616041
   },
   {
    "periodo": "2025-04",
-   "valor": 92.0829681532572
+   "valor": 91.7603309854252
   },
   {
    "periodo": "2025-05",
-   "valor": 89.7281225451919
+   "valor": 89.6335118723888
   },
   {
    "periodo": "2025-06",
-   "valor": 83.6898600052274
+   "valor": 83.5489854151398
   },
   {
    "periodo": "2025-07",
-   "valor": 80.4641596872561
+   "valor": 80.3459503808849
   },
   {
    "periodo": "2025-08",
-   "valor": 82.9613439471124
+   "valor": 83.5303524216813
   },
   {
    "periodo": "2025-09",
-   "valor": 85.3960773222596
+   "valor": 85.1990649638008
   },
   {
    "periodo": "2025-10",
-   "valor": 83.7989913053732
+   "valor": 83.8955233099998
   },
   {
    "periodo": "2025-11",
-   "valor": 86.2885711975186
+   "valor": 86.3280481788216
   },
   {
    "periodo": "2025-12",
-   "valor": 107.331161932693
+   "valor": 107.343226797766
   },
   {
    "periodo": "2026-01",
-   "valor": 104.511351878214
+   "valor": 104.651145716507
   },
   {
    "periodo": "2026-02",
-   "valor": 91.610557892812
+   "valor": 91.6704255943897
   },
   {
    "periodo": "2026-03",
-   "valor": 90.9074970807427
+   "valor": 90.9042184484957
   },
   {
    "periodo": "2026-04",
-   "valor": 88.4777587373364
+   "valor": 88.1031972428988
   },
   {
    "periodo": "2026-05",
-   "valor": 88.8596331519555
+   "valor": 88.7112026836176
   },
   {
    "periodo": "2026-06",
-   "valor": 88.9409309104733
+   "valor": 88.8041298285084
   },
   {
    "periodo": "2026-07",
-   "valor": 86.7789580350919
+   "valor": 86.7031870435558
   },
   {
    "periodo": "2026-08",
-   "valor": 72.6332064229581
+   "valor": 73.410989369354
+  },
+  {
+   "periodo": "2026-09",
+   "valor": 77.5841458409281
   }
  ]
 }

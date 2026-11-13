@@ -6,8 +6,8 @@
  "naturaleza": "nivel",
  "fuente": "BCRA",
  "fuenteUrl": "https://www.bcra.gob.ar/PublicacionesEstadisticas/Principales_variables.asp",
- "actualizado": "2026-11-12T19:29:06.952Z",
- "ultimoPeriodo": "2026-11-11",
+ "actualizado": "2026-11-13T19:08:42.875Z",
+ "ultimoPeriodo": "2026-11-12",
  "datos": [
   {
    "periodo": "2024-01-02",
@@ -2776,6 +2776,10 @@
   {
    "periodo": "2026-11-11",
    "valor": 1547.9128
+  },
+  {
+   "periodo": "2026-11-12",
+   "valor": 1544.432
   }
  ]
 }

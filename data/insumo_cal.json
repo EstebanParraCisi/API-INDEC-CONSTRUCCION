@@ -6,8 +6,8 @@
  "naturaleza": "volumen",
  "fuente": "INDEC (ISAC) vía Series de Tiempo",
  "fuenteUrl": "https://datos.gob.ar/series/?ids=33.3_ISAC_CALESLES_0_0_10_7",
- "actualizado": "2026-11-10T17:28:39.852Z",
- "ultimoPeriodo": "2026-08",
+ "actualizado": "2026-11-13T19:08:41.891Z",
+ "ultimoPeriodo": "2026-09",
  "datos": [
   {
    "periodo": "2024-01",
@@ -136,6 +136,10 @@
   {
    "periodo": "2026-08",
    "valor": 114.77404069616072
+  },
+  {
+   "periodo": "2026-09",
+   "valor": 133.15194123210523
   }
  ]
 }

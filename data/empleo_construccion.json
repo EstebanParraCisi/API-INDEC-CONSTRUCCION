@@ -6,8 +6,8 @@
  "naturaleza": "volumen",
  "fuente": "Ministerio de Capital Humano (SIPA) vía Series de Tiempo",
  "fuenteUrl": "https://datos.gob.ar/series/?ids=152.1_CTRUCCIEST_2009_M_16",
- "actualizado": "2026-11-10T17:28:39.852Z",
- "ultimoPeriodo": "2026-06",
+ "actualizado": "2026-11-13T19:08:41.892Z",
+ "ultimoPeriodo": "2026-07",
  "datos": [
   {
    "periodo": "2024-01",
@@ -95,46 +95,50 @@
   },
   {
    "periodo": "2025-10",
-   "valor": 384.414
+   "valor": 384.387
   },
   {
    "periodo": "2025-11",
-   "valor": 381.668
+   "valor": 381.647
   },
   {
    "periodo": "2025-12",
-   "valor": 374.274
+   "valor": 374.272
   },
   {
    "periodo": "2026-01",
-   "valor": 375.392
+   "valor": 375.372
   },
   {
    "periodo": "2026-02",
-   "valor": 376.395
+   "valor": 376.456
   },
   {
    "periodo": "2026-03",
-   "valor": 380.905
+   "valor": 380.944
   },
   {
    "periodo": "2026-04",
-   "valor": 377.684
+   "valor": 377.777
   },
   {
    "periodo": "2026-05",
-   "valor": 374.83
+   "valor": 376.02
   },
   {
    "periodo": "2026-06",
-   "valor": 375.656
+   "valor": 376.885
   },
   {
    "periodo": "2026-07",
-   "valor": null
+   "valor": 377.353
   },
   {
    "periodo": "2026-08",
+   "valor": null
+  },
+  {
+   "periodo": "2026-09",
    "valor": null
   }
  ]
