@@ -6,7 +6,7 @@
  "naturaleza": "nivel",
  "fuente": "BCRA",
  "fuenteUrl": "https://www.bcra.gob.ar/PublicacionesEstadisticas/Principales_variables.asp",
- "actualizado": "2026-11-16T21:35:21.126Z",
+ "actualizado": "2026-11-18T19:54:37.745Z",
  "ultimoPeriodo": "2026-11",
  "datos": [
   {
@@ -111,8 +111,8 @@
   },
   {
    "periodo": "2026-11",
-   "valor": 24.071428571428573,
-   "obs": "Mes en curso: promedio parcial de 7 días hasta el 2026-11-13"
+   "valor": 24.078125,
+   "obs": "Mes en curso: promedio parcial de 8 días hasta el 2026-11-16"
   }
  ]
 }
